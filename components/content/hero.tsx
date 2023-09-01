@@ -44,7 +44,7 @@ const HeroContents = ({
 			<motion.h1
 				className={`title ${
 					mobileMini && "title-mobile-mini"
-				} relative z-10 text-center tracking-wider`}
+				} relative z-10 text-center`}
 				variants={inViewVariants}
 				initial="fromDown"
 				animate={(!whileInView && "visible") || ""}
@@ -59,7 +59,7 @@ const HeroContents = ({
 			</motion.h1>
 
 			<motion.p
-				className="text-center relative z-10 mt-4 px-4"
+				className="text-center relative z-10 mt-4 px-4 text-xl"
 				variants={inViewVariants}
 				initial="fromDown"
 				animate={(!whileInView && "visible") || ""}
@@ -73,27 +73,6 @@ const HeroContents = ({
 				{desc}
 			</motion.p>
 
-			{/* YEAR */}
-			{showYear && (
-				<motion.span
-					className="text-lg font-medium opacity-80 relative z-10"
-					variants={inViewVariants}
-					initial="fromDown"
-					animate={(!whileInView && "visible") || ""}
-					whileInView={(whileInView && "visible") || ""}
-					transition={{
-						duration: 0.4,
-						delay: (!whileInView && 2.6) || 0,
-					}}
-					viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
-				>
-					2023-24
-				</motion.span>
-			)}
-
-			{/* COUNTDOWN + DATE */}
-			{showTimer && <Timer delay={2.8} whileInView={whileInView} />}
-
 			{/* CTA */}
 			{showCTA && (
 				<motion.div
@@ -104,7 +83,7 @@ const HeroContents = ({
 					whileInView={(whileInView && "visible") || ""}
 					transition={{
 						duration: 0.4,
-						delay: (!whileInView && 3) || 0,
+						delay: (!whileInView && 2.8) || 0,
 					}}
 					viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
 				>
@@ -175,7 +154,7 @@ const Hero = (props: Contents) => {
 	) : (
 		// FULL HERO
 		<section
-			className={`text-white w-full flex justify-center p-h bg-black ${className} relative pt-24`}
+			className={`text-white w-full flex justify-center p-h bg-black ${className} relative py-12`}
 		>
 			{!carousel ? (
 				<img

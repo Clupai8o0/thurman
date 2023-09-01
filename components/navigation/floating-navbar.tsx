@@ -30,7 +30,7 @@ const FloatingNav = ({
 				// className={`p-h py-2 md:py-1 w-screen flex justify-center z-50 fixed top-4 ${
 				// 	openSidebar ? "right-3/4 md:right-1/2" : "right-0"
 				// } transition-all duration-300`}
-				className={`px-4 py-2 md:py-1 w-screen flex justify-center z-50 fixed top-4`}
+				className={`p-h py-2 md:py-1 w-screen flex justify-center z-50 fixed top-4`}
 				variants={inViewVariants}
 				initial="fromTop"
 				animate="visible"

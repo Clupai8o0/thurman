@@ -30,7 +30,7 @@ const Navbar = ({
 			animate="visible"
 			transition={{ duration: 0.4, delay: 1.6 }}
 		>
-			<div className="w-full h-full absolute bg-black top-0 left-0 opacity-20 z-[90]"></div>
+			{/* <div className="w-full h-full absolute bg-black top-0 left-0 opacity-20 z-[90]"></div> */}
 			<div className="max-w-7xl flex items-center justify-between w-full relative z-[99]">
 				{/* LOGO + COUNTDOWN */}
 				<div className="flex gap-4 lg:gap-8 items-center">

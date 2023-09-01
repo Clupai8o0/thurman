@@ -13,7 +13,7 @@
 		@apply text-xl font-medium cursor-pointer hover:opacity-80;
 	}
 	.p-h {
-		@apply px-4 md:px-6 lg:px-16;
+		@apply px-4 md:px-6 lg:px-10;
 	}
 	.m-h {
 		@apply mx-4 md:mx-6 lg:mx-10;
@@ -21,7 +21,7 @@
 
 	/* Texts */
 	.title {
-		@apply text-6xl md:text-8xl font-bold;
+		@apply text-6xl md:text-9xl;
 	}
 	.title-mobile-mini {
 		@apply title text-5xl md:text-8xl;

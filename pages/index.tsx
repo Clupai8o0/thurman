@@ -27,6 +27,8 @@ export default function Home() {
 						<span className="text-primary">M</span>AN
 					</>
 				}
+				// desc="There's no good in a thing until its done. - CEO R. Thurman"
+				desc="Let's create memories together"
 				showCTA
 			/>
 
