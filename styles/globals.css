@@ -21,7 +21,7 @@
 
 	/* Texts */
 	.title {
-		@apply text-6xl md:text-9xl;
+		@apply text-7xl md:text-9xl;
 	}
 	.title-mobile-mini {
 		@apply title text-5xl md:text-8xl;
@@ -205,7 +205,7 @@ button.stt {
 	height: 56px;
 	overflow: hidden;
 	border: none;
-	color: #000;
+	color: #fff;
 	background: none;
 	position: relative;
 	padding-bottom: 2em;
@@ -240,7 +240,7 @@ button.stt:hover:before {
 button.stt .clone > *,
 button.stt .text > * {
 	opacity: 1;
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 	transition: 0.2s;
 	margin-left: 4px;
 }

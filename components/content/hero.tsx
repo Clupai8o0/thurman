@@ -76,7 +76,7 @@ const HeroContents = ({
 			{/* CTA */}
 			{showCTA && (
 				<motion.div
-					className="flex gap-2 md:gap-4 mt-4 md:mt-6 relative z-10"
+					className="flex gap-2 md:gap-4 mt-6 md:mt-10 relative z-10"
 					variants={inViewVariants}
 					initial="fromDown"
 					animate={(!whileInView && "visible") || ""}
@@ -87,8 +87,8 @@ const HeroContents = ({
 					}}
 					viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
 				>
-					<CTA title="Register" href="/register" darkMode />
-					<CTA title="Contact Us" href="/contact" secondary darkMode />
+					<CTA title="Contact Us" href="/register" darkMode />
+					<CTA title="Learn More" href="#about-us" secondary darkMode />
 				</motion.div>
 			)}
 

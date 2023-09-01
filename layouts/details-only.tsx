@@ -7,6 +7,7 @@ function DetailsOnly({
 	bgImg,
 	bgImgAlt,
 	bgOpacity,
+	flexRow,
 }: {
 	children: React.ReactNode;
 	whiteText?: boolean;
@@ -14,6 +15,7 @@ function DetailsOnly({
 	bgImg?: string;
 	bgImgAlt?: string;
 	bgOpacity?: string;
+	flexRow?: boolean;
 }) {
 	return (
 		<div
@@ -31,7 +33,11 @@ function DetailsOnly({
 				""
 			)}
 
-			<div className="flex flex-col relative z-10 max-w-7xl w-full">
+			<div
+				className={`flex ${
+					!flexRow ? "flex-col" : "flex-row"
+				} relative z-10 max-w-7xl w-full`}
+			>
 				{children}
 			</div>
 		</div>

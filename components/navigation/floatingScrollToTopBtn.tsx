@@ -33,11 +33,11 @@ const FloatingScrollToTopBtn = ({ openSidebar }: { openSidebar: boolean }) => {
 		>
 			{showBtn && (
 				<button
-					className="fixed bottom-6 right-6 lg:bottom-10 lg:right-10 bg-primary text-white rounded-full p-4 flex items-center gap-2 cursor-pointer duration-300 ease-in-out shadow-md hover:shadow-2xl hover:scale-110 focus:scale-95 active:scale-100"
+					className="fixed bottom-6 right-6 lg:bottom-10 lg:right-10 bg-primary text-black rounded-full p-4 flex items-center gap-2 cursor-pointer duration-300 ease-in-out shadow-md hover:shadow-2xl hover:scale-110 focus:scale-95 active:scale-100"
 					onClick={goToTop}
 				>
 					<FiArrowUp className="w-6 h-6" />{" "}
-					<span className="hidden md:flex">Go Back To Top</span>
+					<span className="hidden md:flex text-xl text-black mb-1 font-semibold">Go Back To Top</span>
 				</button>
 			)}
 		</motion.div>

@@ -6,16 +6,18 @@ const Heading = ({
 	children,
 	reverse,
 	delay,
-	className
+	className,
+	id
 }: {
 	children: React.ReactNode;
 	reverse?: boolean;
 	delay?: number;
-	className?: string
+	className?: string;
+	id?: string;
 }) => {
 	return (
 		<motion.h1
-			className={`text-6xl font-semibold capitalize ${className}`}
+			className={`text-8xl capitalize text-primary ${className}`}
 			variants={inViewVariants}
 			initial={reverse ? "fromLeft" : "fromRight"}
 			whileInView="visible"
@@ -24,6 +26,7 @@ const Heading = ({
 				delay,
 			}}
 			viewport={{ once: true, amount: 0.25 }}
+			id={id}
 		>
 			{children}
 		</motion.h1>

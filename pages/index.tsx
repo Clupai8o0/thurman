@@ -33,8 +33,8 @@ export default function Home() {
 			/>
 
 			{/* CONTENT */}
-			<ImageWithDetails className="py-28 bg-color-1" whiteText reverse>
-				<Heading reverse>Title</Heading>
+			{/* <ImageWithDetails className="py-28 bg-color-1" whiteText reverse>
+				<Heading reverse id="about-us">About Us</Heading>
 				<Details reverse>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias atque
 					temporibus nobis voluptatem id quae. Delectus enim voluptas blanditiis
@@ -76,108 +76,51 @@ export default function Home() {
 					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
 					reprehenderit ullam? Illum.
 				</Details>
+			</ImageWithDetails> */}
+
+			<DetailsOnly whiteText flexRow>
+				<div className="w-1/2 pr-6">
+					<Heading id="about-us">About Us</Heading>
+					<Details>
+						Pushing past the hardest of challenges, Thruman Events Management
+						was founded in the year 2021
+					</Details>
+					<Details>
+						As a player in the field of events management, we are proud of
+						having a team of enthusiastic designers and engineers who have built
+						our reputation of relentless execution.
+					</Details>
+					<Details>
+						It is this passion we pour into our clients and their creative needs
+					</Details>
+				</div>
+				<div className="w-1/2">
+					<SubHeading>Design & Execution</SubHeading>
+					<Details>
+						Thurman Events Management integrates strategic, creative, and
+						technical expertise to guide corporate, government, and non-profit
+						organizations through the implementation of successful exhibits.
+					</Details>
+					<Details>
+						With our precise 2D/3D renderings, we help clients achieve their
+						ideas by executing projects at local, regional and international
+						platforms
+					</Details>
+				</div>
+			</DetailsOnly>
+
+			<ImageWithDetails src="/road.jpg" alt="picture of road in the middle of a rain-forest" whiteText>
+				<Heading className="text-6xl leading-[80px]">Difficult Roads But Beautiful Destinations</Heading>
+				<Details>
+					We believe in hard work and bringing together ingenious thinking with
+					creative excellence to empower businesses, products/services and
+					people.
+				</Details>
+				<Details>
+					Whenever we help you communicate, we make certain that the experience
+					felt by all is professional and inspiring
+				</Details>
 			</ImageWithDetails>
-
-			<DetailsOnly className="bg-color-7" whiteText>
-				<Heading>Title</Heading>
-				<Details>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis ex
-					pariatur rerum necessitatibus beatae fuga commodi debitis
-					exercitationem vitae, doloremque, omnis suscipit nostrum ipsa harum
-					dicta quisquam facere aut!
-				</Details>
-				<Details>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis ex
-					pariatur rerum necessitatibus beatae fuga commodi debitis
-					exercitationem vitae, doloremque, omnis suscipit nostrum ipsa harum
-					dicta quisquam facere aut! Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Praesentium fugit beatae voluptatibus cum fugiat
-					maiores perspiciatis libero, repudiandae voluptate error nesciunt
-					similiquereversevitae voluptas unde ipsa labore culpa harum?
-					Inventore!
-				</Details>
-				<SubHeading>Subheadding</SubHeading>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<SubHeading>Subheadding</SubHeading>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-			</DetailsOnly>
-
-			<DetailsOnly
-				bgImg="/dummy.png"
-				whiteText
-				bgOpacity="opacity-50"
-				className="bg-black"
-			>
-				<Heading>Title</Heading>
-				<Quote>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas ex
-					eius, nihil, adipisci dolor temporibus, totam dolore laboriosam nulla
-				</Quote>
-				<Details>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis ex
-					pariatur rerum necessitatibus beatae fuga commodi debitis
-					exercitationem vitae, doloremque, omnis suscipit nostrum ipsa harum
-					dicta quisquam facere aut!
-				</Details>
-				<Details>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis ex
-					pariatur rerum necessitatibus beatae fuga commodi debitis
-					exercitationem vitae, doloremque, omnis suscipit nostrum ipsa harum
-					dicta quisquam facere aut! Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Praesentium fugit beatae voluptatibus cum fugiat
-					maiores perspiciatis libero, repudiandae voluptate error nesciunt
-					similiquereversevitae voluptas unde ipsa labore culpa harum?
-					Inventore!
-				</Details>
-				<SubHeading>Subheadding</SubHeading>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-				<SubHeading>Subheadding</SubHeading>
-				<Details>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nobis
-					quae amet, eos voluptatum nihil, repellat exercitationem quod veniam
-					vitae sed, quo repellendus maiores doloremque perspiciatis adipisci
-					reprehenderit ullam? Illum.
-				</Details>
-			</DetailsOnly>
 
 			<DetailsOnly className="bg-color-12">
 				<Heading>FAQs</Heading>

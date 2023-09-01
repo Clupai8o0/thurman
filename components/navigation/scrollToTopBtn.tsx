@@ -9,7 +9,7 @@ const ScrollToTopBtn = () => {
 	return (
 		<div className="w-full flex justify-center py-8 p-h">
 			<div className="max-w-7xl w-full flex justify-end">
-				<button className="stt" onClick={goToTop}>
+				<button className="stt text-white" onClick={goToTop}>
 					<div className="text">
 						<span>Back</span>
 						<span>to</span>
@@ -27,11 +27,11 @@ const ScrollToTopBtn = () => {
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
-						stroke-width="2"
+						strokeWidth="2"
 					>
 						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							strokeLinecap="round"
+							strokeLinejoin="round"
 							d="M14 5l7 7m0 0l-7 7m7-7H3"
 						></path>
 					</svg>
