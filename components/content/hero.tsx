@@ -18,8 +18,8 @@ interface Contents {
 	showCTA?: boolean;
 	showYear?: boolean;
 	desc?: string;
-	src: string;
-	alt: string;
+	src?: string;
+	alt?: string;
 	className?: string;
 	variant?: boolean;
 	mobileMini?: boolean;
@@ -142,12 +142,12 @@ const Hero = (props: Contents) => {
 				duration: 0.4,
 			}}
 		>
-			<div className="max-w-7xl w-full flex flex-col justify-center items-center py-28 md:py-20 relative shadow-md rounded-2xl bg-black ">
-				<img
+			<div className="max-w-7xl w-full flex flex-col justify-center items-center py-28 md:py-20 relative shadow-md rounded-2xl bg-bg">
+				{src && <img
 					src={src}
 					alt={alt}
 					className="w-full h-full absolute top-0 left-0 object-cover opacity-50 rounded-2xl"
-				/>
+				/>}
 				<HeroContents {...props} />
 			</div>
 		</motion.section>
