@@ -8,7 +8,7 @@ function Team() {
 	return (
 		<main className="main">
 			<Head
-				title="NMMUN: Team"
+				title="THURMAN: Team"
 				desc="The team responsible for making this years NMMUN possible"
 			/>
 
@@ -20,26 +20,12 @@ function Team() {
 				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
 			/>
 
-			{/* TABLE OF CONTENT */}
-			<TableOfContent>
-				{[1, 2, 3, 4, 5, 6, 7, 8].map((content, i) => (
-					<ContentLink
-						src="/dummy.png"
-						alt="some dummy image"
-						title="Title"
-						url="#Title"
-						delay={3 + i * 0.2}
-						key={generateKey()}
-					/>
-				))}
-			</TableOfContent>
-
 			{/* CONTENT */}
 			<ProfilesContainer title="Organizers">
 				{[1, 2, 3, 4].map((profile, i) => (
 					<Profile
 						key={generateKey()}
-						src="/dummy.png"
+						src="/dummy.jpg"
 						alt="some dummy"
 						name="Someone"
 						position="Some Position"
@@ -50,7 +36,7 @@ function Team() {
 				{[1, 2, 3, 4].map((profile, i) => (
 					<Profile
 						key={generateKey()}
-						src="/dummy.png"
+						src="/dummy.jpg"
 						alt="some dummy"
 						name="Someone"
 						position="Some Position"
@@ -63,12 +49,13 @@ function Team() {
 			<div className="my-12" />
 
 			<Hero
-				src="/dummy.png"
-				alt="some dummy img"
-				title="NMMUN"
+				title={
+					<>
+						T<span className="text-primary">H</span>UR
+						<span className="text-primary">M</span>AN
+					</>
+				}
 				showCTA
-				showTimer
-				showYear
 				variant
 			/>
 		</main>

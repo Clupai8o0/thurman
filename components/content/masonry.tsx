@@ -18,16 +18,19 @@ const Masonry = ({
 }) => {
 	return (
 		<div className="w-full mt-6">
-			<Heading className="mb-8" delay={1.6} reverse>
-				{title}
+			<Heading className="mb-16" delay={1.6} reverse>
+				GALLERY
 			</Heading>
 			<ResponsiveMasonry
 				columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1280: 4 }}
 			>
 				<ReactMasonry gutter="16px">
-					{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((n) => (
+					{[
+						5, 12, 18, 25, 33, 42, 51, 61, 73, 84, 97, 10, 21, 32, 46, 57, 68,
+						79, 90, 100 
+					].map((_, i) => (
 						<motion.div
-							className="relative h-64 max-h-64 w-full rounded-lg"
+							className="relative w-full rounded-lg"
 							variants={inViewVariants}
 							initial="fromDown"
 							whileInView="visible"
@@ -35,21 +38,15 @@ const Masonry = ({
 							viewport={{ once: true }}
 							key={generateKey()}
 						>
-							<Image
-								fill
-								className="h-auto max-w-full rounded-lg object-cover object-center"
-								src={`${dir}/${n}.jpg`}
-								placeholder="blur"
-								blurDataURL="https://via.placeholder.com/500x500"
+							<img
+								className="h-auto w-full rounded-lg object-cover object-center"
+								src={`/gallery/(${i + 1}).jpeg`}
 								alt="gallery"
 							/>
 						</motion.div>
 					))}
 				</ReactMasonry>
 			</ResponsiveMasonry>
-			<div className="w-full flex justify-center py-8">
-				<CTA title="View All" href={href} target="_blank" />
-			</div>
 		</div>
 	);
 };

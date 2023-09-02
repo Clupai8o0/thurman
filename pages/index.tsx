@@ -93,7 +93,7 @@ export default function Home() {
 				whiteText
 			>
 				<Heading className="text-6xl leading-[80px]">
-					Difficult Roads But Beautiful Destinations
+					Difficult Roads Beautiful Destinations
 				</Heading>
 				<Details>
 					We believe in hard work and bringing together ingenious thinking with
@@ -135,7 +135,12 @@ export default function Home() {
 						<span className="text-primary">M</span>AN
 					</>
 				}
-				desc="Let us help you making your moments that matter, special."
+				desc={
+					<>
+						Let us help you making your moments that matter,{" "}
+						<span className="underline">special</span>.
+					</>
+				}
 				showCTA
 				variant
 				className=""

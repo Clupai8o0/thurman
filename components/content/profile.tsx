@@ -18,7 +18,7 @@ const Profile = ({
 }) => {
 	return (
 		<motion.div
-			className={`max-w-sm bg-white border border-gray-200 rounded-lg shadow-md ${
+			className={`max-w-sm bg-[#101010] border border-gray-800 rounded-lg shadow-md ${
 				rounded && "flex flex-col items-center pt-8"
 			}`}
 			variants={inViewVariants}
@@ -36,7 +36,7 @@ const Profile = ({
 			/>
 
 			<div className={`p-5 ${rounded && "text-center"}`}>
-				<h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">
+				<h5 className="mb-2 text-3xl tracking-tight text-primary">
 					{name}
 				</h5>
 

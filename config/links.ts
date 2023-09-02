@@ -27,6 +27,6 @@ export const navLinks = [
 		name: "Contact Us",
 		href: "/contact",
 		cta: false,
-		showScrollToTop: true,
+		showScrollToTop: false,
 	},
 ];

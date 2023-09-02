@@ -3,7 +3,7 @@ import React from "react";
 
 function NotFound() {
 	return (
-		<section className="bg-zinc-900 w-full pt-36">
+		<section className="bg-zinc-900 w-full pt-12">
 			<div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 				<div className="mx-auto max-w-screen-sm text-center">
 					<h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-white">
@@ -15,7 +15,7 @@ function NotFound() {
 					<p className="mb-4 text-lg font-light text-gray-400">
 						Sorry, we can't find that page.
 					</p>
-					<CTA href="/" title="Back to Home" className="my-4" />
+					<CTA href="/" title="Back to Home" className="my-4" darkMode />
 				</div>
 			</div>
 		</section>

@@ -13,7 +13,7 @@
 		@apply text-xl font-medium cursor-pointer hover:opacity-80;
 	}
 	.p-h {
-		@apply px-4 md:px-6 lg:px-10;
+		@apply px-6 lg:px-10;
 	}
 	.m-h {
 		@apply mx-4 md:mx-6 lg:mx-10;
@@ -57,6 +57,18 @@ html,
 body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+	background-color: transparent;
+	width: 8px;
+}
+body::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #4e4e4e;
+	border-radius: 16px;
 }
 
 body {
@@ -293,7 +305,7 @@ button.stt:hover svg {
 .line-wobble {
 	--uib-size: 80px;
 	--uib-speed: 1.55s;
-	--uib-color: #26F705;
+	--uib-color: #26f705;
 	--uib-line-weight: 5px;
 	position: relative;
 	display: flex;

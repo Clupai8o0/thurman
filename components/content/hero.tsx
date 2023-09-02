@@ -1,5 +1,5 @@
 // Icons
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 // Animation
@@ -17,7 +17,7 @@ interface Contents {
 	showContactCTA?: boolean;
 	showCTA?: boolean;
 	showYear?: boolean;
-	desc?: string;
+	desc?: string | React.ReactNode;
 	src?: string;
 	alt?: string;
 	className?: string;
@@ -26,6 +26,7 @@ interface Contents {
 	whileInView?: boolean;
 	carousel?: boolean;
 	images?: string[];
+	cta?: React.ReactNode;
 }
 
 const HeroContents = ({
@@ -37,6 +38,7 @@ const HeroContents = ({
 	desc,
 	mobileMini,
 	whileInView,
+	cta,
 }: Contents) => {
 	return (
 		<>
@@ -87,8 +89,14 @@ const HeroContents = ({
 					}}
 					viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
 				>
-					<CTA title="Contact Us" href="/register" darkMode />
-					<CTA title="Learn More" href="#about-us" secondary darkMode />
+					{!cta ? (
+						<>
+							<CTA title="Contact Us" href="/register" darkMode />
+							<CTA title="Learn More" href="#about-us" secondary darkMode />
+						</>
+					) : (
+						cta
+					)}
 				</motion.div>
 			)}
 
@@ -111,6 +119,14 @@ const HeroContents = ({
 						href="https://www.instagram.com/nmmun_23/"
 						target="_blank"
 						icon={<AiFillInstagram className="w-6 h-6" />}
+						darkMode
+					/>
+					<CTA
+						title="Facebook"
+						target="_blank"
+						href="https://www.facebook.com/"
+						icon={<AiFillFacebook className="w-6 h-6" />}
+						secondary
 						darkMode
 					/>
 					<CTA
@@ -143,11 +159,13 @@ const Hero = (props: Contents) => {
 			}}
 		>
 			<div className="max-w-7xl w-full flex flex-col justify-center items-center py-28 md:py-20 relative shadow-md rounded-2xl bg-bg">
-				{src && <img
-					src={src}
-					alt={alt}
-					className="w-full h-full absolute top-0 left-0 object-cover opacity-50 rounded-2xl"
-				/>}
+				{src && (
+					<img
+						src={src}
+						alt={alt}
+						className="w-full h-full absolute top-0 left-0 object-cover opacity-50 rounded-2xl"
+					/>
+				)}
 				<HeroContents {...props} />
 			</div>
 		</motion.section>

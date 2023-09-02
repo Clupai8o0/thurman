@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { navLinks } from "@/config/links";
 import { v4 as generateKey } from "uuid";
@@ -44,6 +44,13 @@ function Footer({ className }: { className?: string }) {
 					</span>
 
 					<div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+						<a
+							href="https://www.instagram.com/nmmun_23/"
+							className="text-gray-300 hover:text-white"
+						>
+							<AiFillFacebook className="w-6 h-6" />
+							<span className="sr-only">Facebook Page</span>
+						</a>
 						<a
 							href="https://www.instagram.com/nmmun_23/"
 							className="text-gray-300 hover:text-white"
