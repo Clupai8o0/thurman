@@ -148,7 +148,7 @@ export default function Home() {
 				showCTA
 				cta={
 					<>
-						<CTA title="Our Services" href="/services" darkMode />
+						<CTA title="Contact Us" href="/contact" darkMode />
 						<CTA title="Our Team" href="/team" secondary darkMode />
 					</>
 				}

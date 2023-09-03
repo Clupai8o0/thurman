@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Head, Hero, Masonry } from "@/components";
+import { CTA, ContactSection, Head, Hero, Masonry } from "@/components";
 import { DetailsOnly, Timeline, TimelineContainer } from "@/layouts";
 
 function Gallery() {
@@ -34,19 +34,29 @@ function Gallery() {
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						<span className="text-primary">M</span>AN{" "}
+						<span className="text-primary">E</span>V
+						<span className="text-primary">E</span>NTS
 					</>
 				}
 				desc={
 					<>
-						Let us help you making your moments that matter,{" "}
-						<span className="underline">special</span>.
+						Let us help you in making those moments that matter,{" "}
+						<span className="text-primary">special</span>.
 					</>
 				}
 				showCTA
+				cta={
+					<>
+						<CTA title="Contact Us" href="/contact" darkMode />
+						<CTA title="About Us" href="/" secondary darkMode />
+					</>
+				}
 				variant
 				className=""
 			/>
+
+			<ContactSection />
 		</main>
 	);
 }

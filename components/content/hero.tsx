@@ -61,7 +61,7 @@ const HeroContents = ({
 			</motion.h1>
 
 			<motion.p
-				className="text-center relative z-10 mt-4 px-4 text-xl"
+				className="text-center relative z-10 mt-4 px-4 text-xl leading-6"
 				variants={inViewVariants}
 				initial="fromDown"
 				animate={(!whileInView && "visible") || ""}

@@ -37,7 +37,7 @@ function Services() {
 
 			{/* HERO */}
 			<Hero
-				src="/dummy.jpg"
+				src="/hero-services.jpeg"
 				alt="NMMUN preview images of NMMUN'22"
 				title="OUR SERVICES"
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
@@ -71,25 +71,35 @@ function Services() {
 				<Details>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
-							<ul>
-								<li className="text-xl capitalize">Award ceremonies</li>
-								<li className="text-xl capitalize">Exhibitions</li>
-								<li className="text-xl capitalize">Employee Gathering</li>
-								<li className="text-xl capitalize">Corporate Events</li>
-								<li className="text-xl capitalize">Conferences</li>
-								<li className="text-xl capitalize">Branding</li>
+							<ul className="flex flex-col gap-y-2">
+								<li className="text-xl capitalize leading-5">
+									Award ceremonies
+								</li>
+								<li className="text-xl capitalize leading-5">Exhibitions</li>
+								<li className="text-xl capitalize leading-5">
+									Employee Gathering
+								</li>
+								<li className="text-xl capitalize leading-5">
+									Corporate Events
+								</li>
+								<li className="text-xl capitalize leading-5">Conferences</li>
+								<li className="text-xl capitalize leading-5">Branding</li>
 							</ul>
 						</div>
 						<div className="w-1/2 md:w-1/3">
-							<ul>
-								<li className="text-xl capitalize">Wedding Ceremonies</li>
-								<li className="text-xl capitalize">Public Engagements</li>
-								<li className="text-xl capitalize">Sport Events</li>
-								<li className="text-xl capitalize">Trade Shows</li>
-								<li className="text-xl capitalize">
+							<ul className="flex flex-col gap-y-2">
+								<li className="text-xl capitalize leading-5">
+									Wedding Ceremonies
+								</li>
+								<li className="text-xl capitalize leading-5">
+									Public Engagements
+								</li>
+								<li className="text-xl capitalize leading-5">Sport Events</li>
+								<li className="text-xl capitalize leading-5">Trade Shows</li>
+								<li className="text-xl capitalize leading-5">
 									Internal Corporate Events
 								</li>
-								<li className="text-xl capitalize">Activation</li>
+								<li className="text-xl capitalize leading-5">Activation</li>
 							</ul>
 						</div>
 					</div>
@@ -115,28 +125,30 @@ function Services() {
 				<Details>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
-							<ul>
-								<li className="capitalize text-xl">AV</li>
-								<li className="capitalize text-xl">Sound System</li>
-								<li className="capitalize text-xl">Lightings</li>
-								<li className="capitalize text-xl">Truss Systems</li>
-								<li className="capitalize text-xl">LED Screens</li>
+							<ul className="flex flex-col gap-y-2">
+								<li className="capitalize text-xl leading-5">AV</li>
+								<li className="capitalize text-xl leading-5">Sound System</li>
+								<li className="capitalize text-xl leading-5">Lightings</li>
+								<li className="capitalize text-xl leading-5">Truss Systems</li>
+								<li className="capitalize text-xl leading-5">LED Screens</li>
 							</ul>
 						</div>
 						<div className="w-1/2 md:w-1/3">
-							<ul>
-								<li className="capitalize text-xl">Furniture</li>
-								<li className="capitalize text-xl">Entertainments</li>
-								<li className="capitalize text-xl">Hosts/Hostesses</li>
-								<li className="capitalize text-xl">Photographers</li>
-								<li className="capitalize text-xl">Videographers</li>
+							<ul className="flex flex-col gap-y-2">
+								<li className="capitalize text-xl leading-5">Furniture</li>
+								<li className="capitalize text-xl leading-5">Entertainments</li>
+								<li className="capitalize text-xl leading-5">
+									Hosts/Hostesses
+								</li>
+								<li className="capitalize text-xl leading-5">Photographers</li>
+								<li className="capitalize text-xl leading-5">Videographers</li>
 							</ul>
 						</div>
 					</div>
 				</Details>
 			</ImageWithDetails>
 
-			<DetailsOnly className="overflow-y-hidden h-[1280px] !pb-0">
+			<DetailsOnly className="overflow-y-hidden h-[1800px] lg:h-[1440px] !pb-0">
 				<Heading className="mb-16" reverse>
 					Our Work
 				</Heading>
@@ -171,20 +183,22 @@ function Services() {
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						<span className="text-primary">M</span>AN{" "}
+						<span className="text-primary">E</span>V
+						<span className="text-primary">E</span>NTS
 					</>
 				}
 				desc={
 					<>
-						Let us help you making your moments that matter,{" "}
-						<span className="underline">special</span>.
+						Let us help you in making those moments that matter,{" "}
+						<span className="text-primary">special</span>.
 					</>
 				}
 				showCTA
 				cta={
 					<>
-						<CTA title="Our Services" href="/services" darkMode />
-						<CTA title="Our Team" href="/team" secondary darkMode />
+						<CTA title="Contact Us" href="/contact" darkMode />
+						<CTA title="Gallery" href="/gallery" darkMode secondary />
 					</>
 				}
 				variant

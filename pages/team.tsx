@@ -1,7 +1,14 @@
 import React from "react";
 import { v4 as generateKey } from "uuid";
 
-import { ContentLink, Head, Hero, Profile } from "@/components";
+import {
+	CTA,
+	ContactSection,
+	ContentLink,
+	Head,
+	Hero,
+	Profile,
+} from "@/components";
 import { ProfilesContainer, TableOfContent } from "@/layouts";
 
 function Team() {
@@ -15,31 +22,42 @@ function Team() {
 			{/* HERO */}
 			<Hero
 				title="OUR TEAM"
-				src="/hero-team-2.jpg"
+				src="/hero-team-3.jpg"
 				alt="some dummy pic"
 				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
 			/>
 
 			{/* CONTENT */}
 			<ProfilesContainer title="Organizers">
-				{[1, 2, 3, 4].map((profile, i) => (
+				{[
+					{
+						name: "Reeves Thurman",
+						position: "CEO",
+						contact: "",
+						src: "/thurman.png",
+						alt: "Portrait of Reeves Thurman, the CEO of Thurman Event Management",
+					},
+					{
+						name: "Shehbaaz K.",
+						position: "Operations Manager",
+						contact: "",
+						src: "/shehbaaz.jpeg",
+						alt: "Picture of Shehbaaz K., the operations manager of Thurman Event Management",
+					},
+					{
+						name: "Javed K.",
+						position: "Manager",
+						contact: "",
+						src: "/javed.jpeg",
+						alt: "Portrait of Javed K., the Manager of Thurman Event Management",
+					},
+				].map((profile) => (
 					<Profile
 						key={generateKey()}
-						src="/dummy.jpg"
-						alt="some dummy"
-						name="Someone"
-						position="Some Position"
-					/>
-				))}
-			</ProfilesContainer>
-			<ProfilesContainer title="IT">
-				{[1, 2, 3, 4].map((profile, i) => (
-					<Profile
-						key={generateKey()}
-						src="/dummy.jpg"
-						alt="some dummy"
-						name="Someone"
-						position="Some Position"
+						src={profile.src}
+						alt={profile.alt}
+						name={profile.name}
+						position={profile.position}
 						rounded
 					/>
 				))}
@@ -52,12 +70,28 @@ function Team() {
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						<span className="text-primary">M</span>AN{" "}
+						<span className="text-primary">E</span>V
+						<span className="text-primary">E</span>NTS
+					</>
+				}
+				desc={
+					<>
+						Let us help you in making those moments that matter,{" "}
+						<span className="text-primary">special</span>.
 					</>
 				}
 				showCTA
+				cta={
+					<>
+						<CTA title="Contact Us" href="/contact" darkMode />
+						<CTA title="Our Services" href="/services" secondary darkMode />
+					</>
+				}
 				variant
 			/>
+
+			<ContactSection />
 		</main>
 	);
 }
