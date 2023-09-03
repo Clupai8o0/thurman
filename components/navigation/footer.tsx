@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { AiFillInstagram, AiFillFacebook } from "react-icons/ai";
+import { AiFillInstagram, AiFillFacebook, AiFillMail } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
-import { navLinks } from "@/config/links";
+import { navLinks, socialLinks } from "@/config/links";
 import { v4 as generateKey } from "uuid";
 
 function Footer({ className }: { className?: string }) {
@@ -26,7 +26,7 @@ function Footer({ className }: { className?: string }) {
 							<li key={generateKey()}>
 								<Link
 									href={link.href}
-									className="link text-white hover:opacity-80 cursor-pointer text-xl"
+									className="link text-white hover:opacity-80 cursor-pointer text-xl hover:text-primary transition duration-300 ease-in-out"
 									title={link.name}
 								>
 									{link.name}
@@ -45,24 +45,24 @@ function Footer({ className }: { className?: string }) {
 
 					<div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
 						<a
-							href="https://www.instagram.com/nmmun_23/"
-							className="text-gray-300 hover:text-white"
+							href={socialLinks.facebook}
+							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 						>
 							<AiFillFacebook className="w-6 h-6" />
 							<span className="sr-only">Facebook Page</span>
 						</a>
 						<a
-							href="https://www.instagram.com/nmmun_23/"
-							className="text-gray-300 hover:text-white"
+							href={socialLinks.instagram}
+							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 						>
 							<AiFillInstagram className="w-6 h-6" />
 							<span className="sr-only">Instagram Page</span>
 						</a>
 						<a
-							href="mailto:nmmun2023cs@gmail.com"
-							className="text-gray-300 hover:text-white"
+							href={`mailto:${socialLinks.mail}`}
+							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 						>
-							<MdEmail className="w-6 h-6" />
+							<AiFillMail className="w-6 h-6" />
 							<span className="sr-only">Email Link</span>
 						</a>
 					</div>

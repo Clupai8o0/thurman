@@ -30,3 +30,9 @@ export const navLinks = [
 		showScrollToTop: false,
 	},
 ];
+
+export const socialLinks = {
+	facebook: "",
+	instagram: "https://www.instagram.com/thurmanevents/",
+	mail: "thurmanevents@gmail.com",
+};

@@ -28,26 +28,46 @@ function Contact() {
 							<li className="text-xl capitalize">Manama, Bahrain</li>
 						</ul>
 					</div>
-					<div className="w-1/3">
-						<SubHeading className="mb-4">Socials & Contact Information</SubHeading>
-						<ul className="text-xl capitalize">
-							<li className="gap-4">
-								Mobile:
-								<a href="tel:+973-3313-1730">+973 3313 1730</a>
+					<div className="w-2/3">
+						<SubHeading className="mb-4">
+							Socials & Contact Information
+						</SubHeading>
+						<ul className="text-xl">
+							<li className="gap-2 flex items-center mt-2">
+								{/* <a
+									href="tel:+973-3313-1730"
+									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+								> */}
+								<AiFillPhone className="w-6 h-6" />
+								+973 3313 1730
+								{/* </a> */}
 							</li>
 							<li>
-								Email:
-								<a href="mailto:thurmanevents@gmail.com">
+								<a
+									href="mailto:thurmanevents@gmail.com"
+									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+								>
+									<AiFillMail className="w-6 h-6" />
 									thurmanevents@gmail.com
 								</a>
 							</li>
 							<li>
-								<AiFillInstagram className="w-6 h-6" />
-								<a href=""></a>
+								<a
+									href={socialLinks.instagram}
+									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+								>
+									<AiFillInstagram className="w-6 h-6" />
+									@thurmanevents
+								</a>
 							</li>
 							<li>
-								<AiFillFacebook className="w-6 h-6" />
-								<a href=""></a>
+								<a
+									href={socialLinks.facebook}
+									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+								>
+									<AiFillFacebook className="w-6 h-6" />
+									Thurman Events
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -62,7 +82,13 @@ export default Contact;
 import { GetStaticProps } from "next";
 import { DetailsOnly } from "@/layouts";
 import { Details, Heading, SubHeading } from "@/components";
-import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
+import {
+	AiFillFacebook,
+	AiFillInstagram,
+	AiFillPhone,
+	AiFillMail,
+} from "react-icons/ai";
+import { socialLinks } from "@/config/links";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	return {

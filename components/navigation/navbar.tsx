@@ -58,7 +58,7 @@ const Navbar = ({
 										// className={`nav-link nav-link-anim nav-link-ltr ${
 										// 	darkMode && "nav-link-anim-dark"
 										// }`}
-										className={`nav-link cursor-pointer hover:opacity-75 transition duration-300 ease-in-`}
+										className={`nav-link cursor-pointer hover:opacity-75 transition duration-300 hover:text-primary ease-in-out`}
 										title={link.name}
 									>
 										{link.name}

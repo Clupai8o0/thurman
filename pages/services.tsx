@@ -44,7 +44,7 @@ function Services() {
 
 				<Details>
 					<div className="flex flex-row mt-8">
-						<div className="w-1/3">
+						<div className="w-1/2 md:w-1/3">
 							<ul>
 								<li className="text-xl capitalize">Award ceremonies</li>
 								<li className="text-xl capitalize">Exhibitions</li>
@@ -54,7 +54,7 @@ function Services() {
 								<li className="text-xl capitalize">Branding</li>
 							</ul>
 						</div>
-						<div className="w-1/3">
+						<div className="w-1/2 md:w-1/3">
 							<ul>
 								<li className="text-xl capitalize">Wedding Ceremonies</li>
 								<li className="text-xl capitalize">Public Engagements</li>
@@ -82,7 +82,7 @@ function Services() {
 
 				<Details>
 					<div className="flex flex-row mt-8">
-						<div className="w-1/3">
+						<div className="w-1/2 md:w-1/3">
 							<ul>
 								<li className="capitalize text-xl">AV</li>
 								<li className="capitalize text-xl">Sound System</li>
@@ -91,7 +91,7 @@ function Services() {
 								<li className="capitalize text-xl">LED Screens</li>
 							</ul>
 						</div>
-						<div className="w-1/3">
+						<div className="w-1/2 md:w-1/3">
 							<ul>
 								<li className="capitalize text-xl">Furniture</li>
 								<li className="capitalize text-xl">Entertainments</li>

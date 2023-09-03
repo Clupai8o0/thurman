@@ -1,11 +1,11 @@
 // Icons
 import { MdEmail } from "react-icons/md";
-import { AiFillInstagram } from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillMail } from "react-icons/ai";
 
 // Links
 import { v4 as generateKey } from "uuid";
 import Link from "next/link";
-import { navLinks } from "@/config/links";
+import { navLinks, socialLinks } from "@/config/links";
 
 function Sidebar({ openSidebar }: { openSidebar: boolean }) {
 	return (
@@ -57,17 +57,24 @@ function Sidebar({ openSidebar }: { openSidebar: boolean }) {
 
 				<div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
 					<a
-						href="https://www.instagram.com/nmmun_23/"
+						href={socialLinks.facebook}
+						className="text-gray-300 hover:text-white"
+					>
+						<AiFillFacebook className="w-8 h-8" />
+						<span className="sr-only">Facebook Page</span>
+					</a>
+					<a
+						href={socialLinks.instagram}
 						className="text-gray-300 hover:text-white"
 					>
 						<AiFillInstagram className="w-8 h-8" />
 						<span className="sr-only">Instagram Page</span>
 					</a>
 					<a
-						href="mailto:nmmun2023cs@gmail.com"
+						href={`mailto:${socialLinks.mail}`}
 						className="text-gray-300 hover:text-white"
 					>
-						<MdEmail className="w-8 h-8" />
+						<AiFillMail className="w-8 h-8" />
 						<span className="sr-only">Email Link</span>
 					</a>
 				</div>
