@@ -20,3 +20,4 @@ export { default as Logo } from "./navigation/logo";
 export { default as DressCode } from "./content/dress-code";
 export { default as Itinerary } from "./content/itinerary";
 export { default as TransitionOverlay } from "./loading/transition-overlay";
+export { default as ContactSection } from './content/contact'
