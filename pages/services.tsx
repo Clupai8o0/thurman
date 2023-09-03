@@ -1,7 +1,33 @@
-import { CTA, Details, Head, Heading, Hero, SubHeading } from "@/components";
+import {
+	CTA,
+	ContactSection,
+	Details,
+	Head,
+	Heading,
+	Hero,
+	SubHeading,
+} from "@/components";
 import { DetailsOnly, ImageWithDetails } from "@/layouts";
+import ReactMasonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { motion } from "framer-motion";
+import { inViewVariants } from "@/config/animations";
+import { v4 as generateKey } from "uuid";
+
+function imgsList() {
+	let list: number[] = [];
+	for (let i = 0; i < 18; i++) {
+		list.push(i);
+	}
+	for (let i = list.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[list[i], list[j]] = [list[j], list[i]]; // Swap elements
+	}
+	return list;
+}
 
 function Services() {
+	const list = imgsList();
+
 	return (
 		<main className="main">
 			<Head
@@ -70,7 +96,13 @@ function Services() {
 				</Details>
 			</ImageWithDetails>
 
-			<ImageWithDetails whiteText src="/provide.jpg" alt="" className="py-16" opacity={0.9}>
+			<ImageWithDetails
+				whiteText
+				src="/provide.jpg"
+				alt=""
+				className="py-16"
+				opacity={0.9}
+			>
 				<Heading>We Also Provide</Heading>
 				<Details>
 					Our team of experienced event planners work close with clients to
@@ -103,6 +135,62 @@ function Services() {
 					</div>
 				</Details>
 			</ImageWithDetails>
+
+			<DetailsOnly className="overflow-y-hidden h-[1280px] !pb-0">
+				<Heading className="mb-16" reverse>
+					Our Work
+				</Heading>
+
+				<ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 900: 3 }}>
+					<ReactMasonry gutter="16px">
+						{list.map((i) => (
+							<motion.div
+								className="relative w-full rounded-lg"
+								variants={inViewVariants}
+								initial="fromDown"
+								whileInView="visible"
+								transition={{ duration: 0.4 }}
+								viewport={{ once: true }}
+								key={generateKey()}
+							>
+								<img
+									className="h-auto w-full rounded-lg object-cover object-center"
+									src={`/gallery/(${i + 1}).jpeg`}
+									alt="gallery"
+								/>
+							</motion.div>
+						))}
+					</ReactMasonry>
+				</ResponsiveMasonry>
+
+				<div className="w-full h-1/2 bottom-[16.666666667%] absolute bg-gradient-to-t from-[#060606] to-[rgba(0,0,0,0)]"></div>
+				<div className="w-full h-1/6 absolute bottom-0 bg-[#060606]"></div>
+			</DetailsOnly>
+
+			<Hero
+				title={
+					<>
+						T<span className="text-primary">H</span>UR
+						<span className="text-primary">M</span>AN
+					</>
+				}
+				desc={
+					<>
+						Let us help you making your moments that matter,{" "}
+						<span className="underline">special</span>.
+					</>
+				}
+				showCTA
+				cta={
+					<>
+						<CTA title="Our Services" href="/services" darkMode />
+						<CTA title="Our Team" href="/team" secondary darkMode />
+					</>
+				}
+				variant
+			/>
+
+			<ContactSection />
 		</main>
 	);
 }

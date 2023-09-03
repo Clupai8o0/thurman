@@ -21,7 +21,7 @@ function DetailsOnly({
 		<div
 			className={`${
 				whiteText ? "text-white" : "text-black"
-			} ${className} relative p-h w-full flex justify-center py-28`}
+			} relative p-h w-full flex justify-center py-28 ${className}`}
 		>
 			{bgImg ? (
 				<img
@@ -36,7 +36,7 @@ function DetailsOnly({
 			<div
 				className={`flex ${
 					!flexRow ? "flex-col" : "flex-row"
-				} relative z-10 max-w-7xl w-full`}
+				} relative z-10 max-w-7xl w-full h-full`}
 			>
 				{children}
 			</div>

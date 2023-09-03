@@ -94,7 +94,7 @@ export default function Home() {
 				alt="picture of road in the middle of a rain-forest"
 				whiteText
 			>
-				<Heading className="text-6xl leading-[80px]">
+				<Heading className="text-6xl md:leading-[80px]">
 					Difficult Roads Beautiful Destinations
 				</Heading>
 				<Details>
@@ -111,11 +111,11 @@ export default function Home() {
 			<DetailsOnly className="bg-color-12" whiteText>
 				<div className="flex flex-col md:flex-row gap-8">
 					<div className="md:w-1/3">
-						<Heading className="leading-[80px]">OUR MISSION</Heading>
+						<Heading className="md:leading-[80px]">OUR MISSION</Heading>
 						<Details>To provide perfect customer service</Details>
 					</div>
 					<div className="md:w-1/3">
-						<Heading className="leading-[80px] text-white">
+						<Heading className="md:leading-[80px] text-white">
 							<span className="text-primary">OUR</span> VISION
 						</Heading>
 						<Details>
@@ -124,7 +124,7 @@ export default function Home() {
 						</Details>
 					</div>
 					<div className="md:w-1/3">
-						<Heading className="leading-[80px]">OUR VALUES</Heading>
+						<Heading className="md:leading-[80px]">OUR VALUES</Heading>
 						<Details>Preparation, Performance, Professionalism</Details>
 					</div>
 				</div>
@@ -134,13 +134,15 @@ export default function Home() {
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						<span className="text-primary">M</span>AN{" "}
+						<span className="text-primary">E</span>V
+						<span className="text-primary">E</span>NTS
 					</>
 				}
 				desc={
 					<>
-						Let us help you making your moments that matter,{" "}
-						<span className="underline">special</span>.
+						Let us help you in making those moments that matter,{" "}
+						<span className="text-primary">special</span>.
 					</>
 				}
 				showCTA

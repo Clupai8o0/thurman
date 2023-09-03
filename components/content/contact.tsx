@@ -12,18 +12,13 @@ const ContactSection = () => {
 				To know more about our creative services please contact us
 			</Details>
 			<div className="flex flex-col md:flex-row mt-8">
-				<div className="w-1/3">
+				<div className="w-full md:w-1/3">
 					<SubHeading className="mb-4">Address: </SubHeading>
-					<Details>
-						<ul>
-							<li className="text-xl capitalize">Block - 321</li>
-							<li className="text-xl capitalize">Road - 2124</li>
-							<li className="text-xl capitalize">Building - 1913, 2nd Floor</li>
-							<li className="text-xl capitalize">Manama, Bahrain</li>
-						</ul>
+					<Details className="w-full md:w-2/3">
+						Block 321, Road 2124, Building 1913, 2nd Floor, Manama, Bahrain
 					</Details>
 				</div>
-				<div className="w-2/3">
+				<div className="w-full md:w-2/3">
 					<SubHeading className="mb-4">
 						Socials & Contact Information
 					</SubHeading>
@@ -38,15 +33,9 @@ const ContactSection = () => {
 								+973 3313 1730
 								{/* </a> */}
 							</li>
-							<li>
-								<a
-									href="mailto:thurmanevents@gmail.com"
-									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
-									target="_blank"
-								>
-									<AiFillMail className="w-6 h-6" />
-									thurmanevents@gmail.com
-								</a>
+							<li className="gap-2 flex items-center mt-2">
+								<AiFillMail className="w-6 h-6" />
+								thurmanevents@gmail.com
 							</li>
 							<li>
 								<a
