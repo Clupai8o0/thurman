@@ -36,8 +36,8 @@ export default function Home() {
 			<ImageWithDetails
 				whiteText
 				reverse
-				src="/dummy.jpg"
-				alt="dummy pic"
+				src="/thurman.png"
+				alt="dummy "
 				className="pt-16"
 			>
 				<div className="flex flex-row gap-8">

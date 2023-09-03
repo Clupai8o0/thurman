@@ -44,16 +44,17 @@ function Footer({ className }: { className?: string }) {
 					</span>
 
 					<div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-						<a
+						{/* <a
 							href={socialLinks.facebook}
 							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 						>
 							<AiFillFacebook className="w-6 h-6" />
 							<span className="sr-only">Facebook Page</span>
-						</a>
+						</a> */}
 						<a
 							href={socialLinks.instagram}
 							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
+							target="_blank"
 						>
 							<AiFillInstagram className="w-6 h-6" />
 							<span className="sr-only">Instagram Page</span>
@@ -61,6 +62,7 @@ function Footer({ className }: { className?: string }) {
 						<a
 							href={`mailto:${socialLinks.mail}`}
 							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
+							target="_blank"
 						>
 							<AiFillMail className="w-6 h-6" />
 							<span className="sr-only">Email Link</span>

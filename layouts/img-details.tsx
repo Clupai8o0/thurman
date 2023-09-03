@@ -10,20 +10,26 @@ function ImageWithDetails({
 	bgImg,
 	bgImgAlt,
 	bgOpacity,
-	src, alt, w, h, id
+	src,
+	alt,
+	w,
+	h,
+	id,
+	rounded,
 }: {
 	children: React.ReactNode;
 	reverse?: boolean;
 	whiteText?: boolean;
 	className?: string;
 	src?: string; //todo: make this required
-	alt?: string; 
+	alt?: string;
 	w?: string; // todo: give this options
 	h?: string;
 	bgImg?: string;
 	bgImgAlt?: string;
 	bgOpacity?: string;
 	id?: string;
+	rounded?: boolean;
 }) {
 	return (
 		<section
@@ -51,7 +57,7 @@ function ImageWithDetails({
 					<motion.img
 						src={src ? src : "/dummy.png"} // todo: make this requried
 						alt={alt ? alt : "some alt text"}
-						className={`rounded-2xl ${w} ${h}`}
+						className={`${rounded && "rounded-2xl"} ${w} ${h}`}
 						variants={inViewVariants}
 						initial={!reverse ? "fromLeft" : "fromRight"}
 						whileInView="visible"

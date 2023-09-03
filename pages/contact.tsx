@@ -46,6 +46,7 @@ function Contact() {
 								<a
 									href="mailto:thurmanevents@gmail.com"
 									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+									target="_blank"
 								>
 									<AiFillMail className="w-6 h-6" />
 									thurmanevents@gmail.com
@@ -55,12 +56,13 @@ function Contact() {
 								<a
 									href={socialLinks.instagram}
 									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
+									target="_blank"
 								>
 									<AiFillInstagram className="w-6 h-6" />
 									@thurmanevents
 								</a>
 							</li>
-							<li>
+							{/* <li>
 								<a
 									href={socialLinks.facebook}
 									className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
@@ -68,7 +70,7 @@ function Contact() {
 									<AiFillFacebook className="w-6 h-6" />
 									Thurman Events
 								</a>
-							</li>
+							</li> */}
 						</ul>
 					</div>
 				</div>

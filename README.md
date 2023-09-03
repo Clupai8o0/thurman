@@ -18,3 +18,7 @@
 
 - Give links aria and other labels
 - Give images a good alt tag
+
+
+- convert imgs to webpp
+- lighthouse
