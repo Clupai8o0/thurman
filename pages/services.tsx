@@ -29,7 +29,7 @@ function Services() {
 			<ImageWithDetails
 				whiteText
 				reverse
-				src="/dummy.jpg"
+				src="/expertise.jpeg"
 				alt=""
 				className="py-16"
 			>
@@ -70,7 +70,7 @@ function Services() {
 				</Details>
 			</ImageWithDetails>
 
-			<ImageWithDetails whiteText src="/dummy.jpg" alt="" className="py-16">
+			<ImageWithDetails whiteText src="/provide.jpg" alt="" className="py-16" opacity={0.9}>
 				<Heading>We Also Provide</Heading>
 				<Details>
 					Our team of experienced event planners work close with clients to

@@ -91,7 +91,7 @@ const HeroContents = ({
 				>
 					{!cta ? (
 						<>
-							<CTA title="Contact Us" href="/register" darkMode />
+							<CTA title="Contact Us" href="/contact" darkMode />
 							<CTA title="Learn More" href="#about-us" secondary darkMode />
 						</>
 					) : (
@@ -172,14 +172,16 @@ const Hero = (props: Contents) => {
 	) : (
 		// FULL HERO
 		<section
-			className={`text-white w-full flex justify-center p-h bg-black ${className} relative py-12`}
+			className={`text-white w-full flex justify-center p-h bg-bg ${className} relative py-12`}
 		>
 			{!carousel ? (
-				<img
-					src={src}
-					alt={alt}
-					className="w-full h-full object-cover opacity-40 absolute top-0 left-0"
-				/>
+				src && (
+					<img
+						src={src}
+						alt={alt}
+						className="w-full h-full object-cover opacity-40 absolute top-0 left-0"
+					/>
+				)
 			) : (
 				<div className="absolute w-full h-full top-0 left-0">
 					<Carousel>

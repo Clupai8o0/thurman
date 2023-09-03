@@ -16,6 +16,7 @@ function ImageWithDetails({
 	h,
 	id,
 	rounded,
+	opacity,
 }: {
 	children: React.ReactNode;
 	reverse?: boolean;
@@ -30,6 +31,7 @@ function ImageWithDetails({
 	bgOpacity?: string;
 	id?: string;
 	rounded?: boolean;
+	opacity?: number | string;
 }) {
 	return (
 		<section
@@ -53,7 +55,7 @@ function ImageWithDetails({
 					whiteText ? "text-white" : "text-black"
 				} max-w-7xl w-full relative z-10`}
 			>
-				<div className="md:w-1/2 flex justify-center items-center">
+				<div className="md:w-1/2 flex justify-center items-center" style={{ opacity }}>
 					<motion.img
 						src={src ? src : "/dummy.png"} // todo: make this requried
 						alt={alt ? alt : "some alt text"}

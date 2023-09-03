@@ -1,4 +1,6 @@
 import {
+	CTA,
+	ContactSection,
 	Details,
 	FAQ,
 	Head,
@@ -19,7 +21,7 @@ export default function Home() {
 
 			{/* HERO */}
 			<Hero
-				src="/dummy.jpg"
+				src="/hero-home-1.jpg"
 				alt="NMMUN preview images of NMMUN'22"
 				title={
 					<>
@@ -142,9 +144,16 @@ export default function Home() {
 					</>
 				}
 				showCTA
+				cta={
+					<>
+						<CTA title="Our Services" href="/services" darkMode />
+						<CTA title="Our Team" href="/team" secondary darkMode />
+					</>
+				}
 				variant
-				className=""
 			/>
+
+			<ContactSection />
 		</main>
 	);
 }
