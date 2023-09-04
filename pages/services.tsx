@@ -31,7 +31,7 @@ function Services() {
 	return (
 		<main className="main">
 			<Head
-				title="THURMAN"
+				title="THURMAN: Services"
 				desc="Thurman Events Management integrates strategic, creative, and technical expertise to guide corporate, government, and non-profit organizations through the implementation of successful exhibits. "
 			/>
 
@@ -68,7 +68,7 @@ function Services() {
 					memories
 				</Details>
 
-				<Details>
+				<div>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
 							<ul className="flex flex-col gap-y-2">
@@ -103,7 +103,7 @@ function Services() {
 							</ul>
 						</div>
 					</div>
-				</Details>
+				</div>
 			</ImageWithDetails>
 
 			<ImageWithDetails
@@ -122,7 +122,7 @@ function Services() {
 					the occasion
 				</Details>
 
-				<Details>
+				<div>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
 							<ul className="flex flex-col gap-y-2">
@@ -145,7 +145,7 @@ function Services() {
 							</ul>
 						</div>
 					</div>
-				</Details>
+				</div>
 			</ImageWithDetails>
 
 			<DetailsOnly className="overflow-y-hidden h-[1800px] lg:h-[1440px] !pb-0">

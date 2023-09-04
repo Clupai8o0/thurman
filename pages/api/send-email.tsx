@@ -1,10 +1,6 @@
 import { sendMail } from "@/service/mailService";
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type ResponseData = {
-	message: string;
-};
-
 export default async function handler(
 	req: NextApiRequest,
 	res: NextApiResponse<any>
@@ -13,19 +9,20 @@ export default async function handler(
 		const { method } = req;
 		switch (method) {
 			case "POST": {
+				const { name, email, message, subject } = req.body;
 				await sendMail(
-					"TEST",
-					"limbusamaka@gmail.com",
-					"THI IS A TEST FOR MY MEDIUM USERS"
+					subject,
+					email,
+					`Name: ${name}\nEmail: ${email}\nMessage: ${message}`
 				);
 				res.status(200).json({
 					success: true,
-					msg: process.env.NODEMAILER_PW
+					msg: "Successfully sent email"
 				});
 				break;
 			}
 			default:
-				res.setHeader("Allow", ["POST", "GET", "PUT", "DELETE"]);
+				res.setHeader("Allow", ["POST"]);
 				res.status(405).end(`Method ${method} Not Allowed`);
 				break;
 		}

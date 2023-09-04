@@ -13,10 +13,11 @@ const CTA = ({
 	className,
 	target,
 	darkMode,
-	noAnimation
+	noAnimation,
+	type,
 }: {
 	title: string;
-	href: string;
+	href?: string;
 	delay?: number;
 	secondary?: boolean;
 	icon?: React.ReactNode;
@@ -24,6 +25,7 @@ const CTA = ({
 	target?: string;
 	darkMode?: boolean;
 	noAnimation?: boolean;
+	type?: "button" | "submit";
 }) => {
 	return (
 		<motion.div
@@ -37,33 +39,67 @@ const CTA = ({
 			}}
 			viewport={{ once: true, amount: 0.25 }}
 		>
-			<Link href={href} target={target}>
-				{!secondary ? (
-					<button
-						className={`rounded-lg cursor-pointer ${
-							darkMode
-								? "text-black bg-primary border-2 border-primary"
-								: "text-white bg-black border-2 border-black hover:text-blue-300"
-						} pb-2 pt-1 lg:pb-3 lg:pt-2 px-6 lg:px-10 hover:-translate-y-1 hover:scale-105 focus:scale-100 focus:translate-y-0 hover:shadow-2xl transition-all duration-300 ease-in-out`}
-					>
-						<span className="flex items-center gap-2 whitespace-nowrap flex-nowrap font-semibold text-2xl">
-							{icon} {title}
-						</span>
-					</button>
-				) : (
-					<button
-						className={`rounded-lg cursor-pointer ${
-							darkMode
-								? "text-primary hover:text-primary border-2 border-primary hover:bg-primary"
-								: "text-black hover:text-black border-2 border-black hover:bg-black"
-						} hover:bg-opacity-20 pb-2 pt-1 lg:pb-3 lg:pt-2 lg:py-3 px-6 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl focus:scale-100 focus:translate-y-0 lg:px-8 transition-all duration-300 ease-in-out`}
-					>
-						<span className="whitespace-nowrap flex items-center gap-2 flex-nowrap font-semibold text-2xl">
-							{icon} {title}
-						</span>
-					</button>
-				)}
-			</Link>
+			{href ? (
+				<Link href={href} target={target}>
+					{!secondary ? (
+						<button
+							className={`rounded-lg cursor-pointer ${
+								darkMode
+									? "text-black bg-primary border-2 border-primary"
+									: "text-white bg-black border-2 border-black hover:text-blue-300"
+							} pb-2 pt-1 lg:pb-3 lg:pt-2 px-6 lg:px-10 hover:-translate-y-1 hover:scale-105 focus:scale-100 focus:translate-y-0 hover:shadow-2xl transition-all duration-300 ease-in-out`}
+							type={type}
+						>
+							<span className="flex items-center gap-2 whitespace-nowrap flex-nowrap font-semibold text-2xl">
+								{icon} {title}
+							</span>
+						</button>
+					) : (
+						<button
+							className={`rounded-lg cursor-pointer ${
+								darkMode
+									? "text-primary hover:text-primary border-2 border-primary hover:bg-primary"
+									: "text-black hover:text-black border-2 border-black hover:bg-black"
+							} hover:bg-opacity-20 pb-2 pt-1 lg:pb-3 lg:pt-2 lg:py-3 px-6 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl focus:scale-100 focus:translate-y-0 lg:px-8 transition-all duration-300 ease-in-out`}
+							type={type}
+						>
+							<span className="whitespace-nowrap flex items-center gap-2 flex-nowrap font-semibold text-2xl">
+								{icon} {title}
+							</span>
+						</button>
+					)}
+				</Link>
+			) : (
+				<>
+					{!secondary ? (
+						<button
+							className={`rounded-lg cursor-pointer ${
+								darkMode
+									? "text-black bg-primary border-2 border-primary"
+									: "text-white bg-black border-2 border-black hover:text-blue-300"
+							} pb-2 pt-1 lg:pb-3 lg:pt-2 px-6 lg:px-10 hover:-translate-y-1 hover:scale-105 focus:scale-100 focus:translate-y-0 hover:shadow-2xl transition-all duration-300 ease-in-out`}
+							type={type}
+						>
+							<span className="flex items-center gap-2 whitespace-nowrap flex-nowrap font-semibold text-2xl">
+								{icon} {title}
+							</span>
+						</button>
+					) : (
+						<button
+							className={`rounded-lg cursor-pointer ${
+								darkMode
+									? "text-primary hover:text-primary border-2 border-primary hover:bg-primary"
+									: "text-black hover:text-black border-2 border-black hover:bg-black"
+							} hover:bg-opacity-20 pb-2 pt-1 lg:pb-3 lg:pt-2 lg:py-3 px-6 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl focus:scale-100 focus:translate-y-0 lg:px-8 transition-all duration-300 ease-in-out`}
+							type={type}
+						>
+							<span className="whitespace-nowrap flex items-center gap-2 flex-nowrap font-semibold text-2xl">
+								{icon} {title}
+							</span>
+						</button>
+					)}
+				</>
+			)}
 		</motion.div>
 	);
 };

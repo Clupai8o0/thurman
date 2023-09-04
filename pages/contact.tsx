@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 function Contact() {
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
@@ -14,22 +12,10 @@ function Contact() {
 
 	return (
 		<main className="main">
-			<Head>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-				/>
-				<title>THURMAN: Contact us</title>
-			</Head>
+			<Head title="THURMAN: Contact Us" desc="" />
 
 			{/* HERO */}
 			<ContactSection />
-
-			<form onSubmit={handleSubmit}>
-				<button type="submit" className="bg-white">
-					Send
-				</button>
-			</form>
 		</main>
 	);
 }
@@ -37,7 +23,7 @@ function Contact() {
 export default Contact;
 
 import { GetStaticProps } from "next";
-import { ContactSection } from "@/components";
+import { ContactSection, Head } from "@/components";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	return {

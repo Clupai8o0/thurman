@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import NextTopLoader from "nextjs-toploader";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Components
 import {
@@ -33,8 +35,8 @@ export default function App({ Component, pageProps }: AppProps) {
 		});
 		window.scrollTo({
 			top: 0,
-			behavior: 'smooth'
-		})
+			behavior: "smooth",
+		});
 		setOpenSidebar(false);
 	}, [pathname]);
 
@@ -77,6 +79,9 @@ export default function App({ Component, pageProps }: AppProps) {
 			{/* Side Mobile Nav */}
 			<Sidebar openSidebar={openSidebar} />
 			<FloatingScrollToTopButton openSidebar={openSidebar} />
+			<div className="fixed top-0 left-0">
+				<ToastContainer />
+			</div>
 		</AnimatePresence>
 	);
 }
