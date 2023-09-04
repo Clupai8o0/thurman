@@ -1,7 +1,17 @@
-import Hero from "@/components/content/hero";
 import Head from "next/head";
 
 function Contact() {
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+
+		const resp = await fetch("/api/send-email", {
+			method: "POST",
+			body: JSON.stringify({}),
+		});
+		const data = await resp.json();
+		console.log(data);
+	};
+
 	return (
 		<main className="main">
 			<Head>
@@ -14,6 +24,12 @@ function Contact() {
 
 			{/* HERO */}
 			<ContactSection />
+
+			<form onSubmit={handleSubmit}>
+				<button type="submit" className="bg-white">
+					Send
+				</button>
+			</form>
 		</main>
 	);
 }
@@ -21,15 +37,7 @@ function Contact() {
 export default Contact;
 
 import { GetStaticProps } from "next";
-import { DetailsOnly } from "@/layouts";
-import { ContactSection, Details, Heading, SubHeading } from "@/components";
-import {
-	AiFillFacebook,
-	AiFillInstagram,
-	AiFillPhone,
-	AiFillMail,
-} from "react-icons/ai";
-import { socialLinks } from "@/config/links";
+import { ContactSection } from "@/components";
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	return {

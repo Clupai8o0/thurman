@@ -10,20 +10,20 @@ const Head = ({ title, desc }: { title: string, desc: string }) => {
 			/>
 			<meta http-equiv="content-language" content="en" />
 			<meta charSet="UTF-8" />
-			<meta name="keywords" content="website, blog, foo, bar" />
-			<meta name="author" content="Clupai8o0" />
-			<meta name="publisher" content="Clupai8o0" />
-			<meta name="copyright" content="NMMUN" />
+			<meta name="keywords" content="website, landing page, events, management, startup" />
+			<meta name="author" content="Thurman" />
+			<meta name="publisher" content="Thurman" />
+			<meta name="copyright" content="Thurman" />
 			<meta
 				name="description"
-				content="This short description describes my website."
+				content={desc}
 			/>
-			<meta name="page-topic" content="MUN" />
+			<meta name="page-topic" content="Events Management" />
 			<meta name="page-type" content="Landing Page" />
 			<meta name="audience" content="Everyone" />
 			<meta name="robots" content="index, follow" />
 
-			{/* <link rel="shortcut icon" href="/images/favicon.ico" />
+			<link rel="shortcut icon" href="/images/favicon.ico" />
 			<link
 				rel="apple-touch-icon"
 				sizes="180x180"
@@ -40,7 +40,7 @@ const Head = ({ title, desc }: { title: string, desc: string }) => {
 				type="image/png"
 				sizes="16x16"
 				href="/images/favicon-16x16.png"
-			/> */}
+			/>
 			<title>{title}</title>
 		</NextHead>
 	);
