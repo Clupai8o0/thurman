@@ -131,7 +131,7 @@ export default function Home() {
 						</Heading>
 						<Details>
 							Thurman events strives on raising the bar on customer experience
-							by creating once in a life time service through their belief in
+							by creating once in a life time service through our beliefs in
 							elite hospitality and customer care.
 						</Details>
 						<Details>
