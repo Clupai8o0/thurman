@@ -12,7 +12,11 @@ function Footer({ className }: { className?: string }) {
 		>
 			<div className="w-full max-w-screen-xl mx-auto">
 				<div className="sm:flex sm:items-center sm:justify-between">
-					<Link href="/" className="flex items-center mb-4 sm:mb-0">
+					<Link
+						href="/"
+						className="flex items-center mb-4 sm:mb-0"
+						aria-label="Thurman logo"
+					>
 						<span className="self-center text-4xl whitespace-nowrap text-white ml-4">
 							<>
 								T<span className="text-primary">H</span>UR
@@ -28,6 +32,7 @@ function Footer({ className }: { className?: string }) {
 									href={link.href}
 									className="link text-white hover:opacity-80 cursor-pointer text-xl hover:text-primary transition duration-300 ease-in-out"
 									title={link.name}
+									aria-label={link.name}
 								>
 									{link.name}
 								</Link>
@@ -44,17 +49,11 @@ function Footer({ className }: { className?: string }) {
 					</span>
 
 					<div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-						{/* <a
-							href={socialLinks.facebook}
-							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
-						>
-							<AiFillFacebook className="w-6 h-6" />
-							<span className="sr-only">Facebook Page</span>
-						</a> */}
 						<a
 							href={socialLinks.instagram}
 							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 							target="_blank"
+							aria-label="thurman instagram link"
 						>
 							<AiFillInstagram className="w-6 h-6" />
 							<span className="sr-only">Instagram Page</span>
@@ -63,6 +62,7 @@ function Footer({ className }: { className?: string }) {
 							href={`mailto:${socialLinks.mail}`}
 							className="text-gray-300 hover:text-primary transition duration-300 ease-in-out"
 							target="_blank"
+							aria-label="thurman email redirect link"
 						>
 							<AiFillMail className="w-6 h-6" />
 							<span className="sr-only">Email Link</span>

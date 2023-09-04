@@ -12,7 +12,7 @@ function NotFound() {
 					<p className="mb-4 text-3xl tracking-tight font-semibold md:text-4xl text-gray-200">
 						Something's missing.
 					</p>
-					<p className="mb-4 text-lg font-light text-gray-400">
+					<p className="mb-4 text-lg text-gray-400">
 						Sorry, we can't find that page.
 					</p>
 					<CTA href="/" title="Back to Home" className="my-4" darkMode />

@@ -34,7 +34,7 @@ const Navbar = ({
 			<div className="max-w-7xl flex items-center justify-between w-full relative z-[99]">
 				{/* LOGO + COUNTDOWN */}
 				<div className="flex gap-4 lg:gap-8 items-center">
-					<Link href="/">
+					<Link href="/" aria-label="tem shortform thurman logo">
 						<Logo darkMode w={64} h={64} />
 					</Link>
 				</div>
@@ -60,6 +60,7 @@ const Navbar = ({
 										// }`}
 										className={`nav-link cursor-pointer hover:opacity-75 transition duration-300 hover:text-primary ease-in-out`}
 										title={link.name}
+										aria-label={link.name}
 									>
 										{link.name}
 									</Link>

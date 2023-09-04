@@ -40,6 +40,7 @@ function Sidebar({ openSidebar }: { openSidebar: boolean }) {
 							href={link.href}
 							className="link uppercase text-xl"
 							title={link.name}
+							aria-label={link.name}
 						>
 							{link.name}
 						</Link>
@@ -67,6 +68,7 @@ function Sidebar({ openSidebar }: { openSidebar: boolean }) {
 						href={socialLinks.instagram}
 						className="text-gray-300 hover:text-white"
 						target="_blank"
+						aria-label="thurman instagram link"
 					>
 						<AiFillInstagram className="w-8 h-8" />
 						<span className="sr-only">Instagram Page</span>
@@ -75,6 +77,7 @@ function Sidebar({ openSidebar }: { openSidebar: boolean }) {
 						href={`mailto:${socialLinks.mail}`}
 						className="text-gray-300 hover:text-white"
 						target="_blank"
+						aria-label="thurman mail redirect"
 					>
 						<AiFillMail className="w-8 h-8" />
 						<span className="sr-only">Email Link</span>

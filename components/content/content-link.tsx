@@ -18,7 +18,7 @@ const ContentLink = ({
 	delay?: number;
 }) => {
 	return (
-		<Link href={url}>
+		<Link href={url} aria-label={title}>
 			<motion.div
 				className="flex items-center gap-4 rounded-xl hover:bg-gray-200 p-2 md:flex-col md:p-12 md:hidden"
 				variants={inViewVariants}

@@ -42,6 +42,8 @@ const Head = ({ title, desc }: { title: string, desc: string }) => {
 				href="/images/favicon-16x16.png"
 			/>
 			<title>{title}</title>
+
+			<link href="https://fonts.googleapis.com/css?family=Darker+Grotesque:regular,500,600,700,800&display=swap" rel="stylesheet" />
 		</NextHead>
 	);
 };

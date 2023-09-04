@@ -209,6 +209,7 @@ const ContactSection = () => {
 										href={socialLinks.instagram}
 										className="hover:text-primary hover:underline transition duration-300 ease-in-out flex gap-2 items-center mt-2"
 										target="_blank"
+										aria-label="Open thurman events instagram"
 									>
 										<AiFillInstagram className="w-6 h-6" />
 										@thurmanevents

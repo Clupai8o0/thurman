@@ -40,7 +40,7 @@ const CTA = ({
 			viewport={{ once: true, amount: 0.25 }}
 		>
 			{href ? (
-				<Link href={href} target={target}>
+				<Link href={href} target={target} aria-label={title}>
 					{!secondary ? (
 						<button
 							className={`rounded-lg cursor-pointer ${
@@ -49,6 +49,7 @@ const CTA = ({
 									: "text-white bg-black border-2 border-black hover:text-blue-300"
 							} pb-2 pt-1 lg:pb-3 lg:pt-2 px-6 lg:px-10 hover:-translate-y-1 hover:scale-105 focus:scale-100 focus:translate-y-0 hover:shadow-2xl transition-all duration-300 ease-in-out`}
 							type={type}
+							aria-label={title}
 						>
 							<span className="flex items-center gap-2 whitespace-nowrap flex-nowrap font-semibold text-2xl">
 								{icon} {title}
@@ -62,6 +63,7 @@ const CTA = ({
 									: "text-black hover:text-black border-2 border-black hover:bg-black"
 							} hover:bg-opacity-20 pb-2 pt-1 lg:pb-3 lg:pt-2 lg:py-3 px-6 hover:-translate-y-1 hover:scale-105 hover:shadow-2xl focus:scale-100 focus:translate-y-0 lg:px-8 transition-all duration-300 ease-in-out`}
 							type={type}
+							aria-label={title}
 						>
 							<span className="whitespace-nowrap flex items-center gap-2 flex-nowrap font-semibold text-2xl">
 								{icon} {title}
