@@ -122,7 +122,7 @@ export default function Home() {
 						<Details>
 							With our team of professionals our intent is to build
 							relationships with our clients with the goal of future prosperity
-							of working together.s
+							of working together.
 						</Details>
 					</div>
 					<div className="md:w-1/3">
