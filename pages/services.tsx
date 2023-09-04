@@ -32,7 +32,7 @@ function Services() {
 		<main className="main">
 			<Head
 				title="THURMAN: Services"
-				desc="Thurman Events Management integrates strategic, creative, and technical expertise to guide corporate, government, and non-profit organizations through the implementation of successful exhibits. "
+				desc="Are you ready to transform your vision into unforgettable experiences? Look no further! At Thurman Events, we specialize in comprehensive event management services that turn your ideas into reality."
 			/>
 
 			{/* HERO */}

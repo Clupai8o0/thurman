@@ -16,7 +16,7 @@ function Team() {
 		<main className="main">
 			<Head
 				title="THURMAN: Team"
-				desc="The team responsible for making this years NMMUN possible"
+				desc="The team responsible for making all this possible at Thurman"
 			/>
 
 			{/* HERO */}

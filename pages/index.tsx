@@ -15,7 +15,7 @@ export default function Home() {
 	return (
 		<main className="main">
 			<Head
-				title="THURMAN"
+				title="THURMAN - Events Management"
 				desc="Thurman Events Management integrates strategic, creative, and technical expertise to guide corporate, government, and non-profit organizations through the implementation of successful exhibits."
 			/>
 

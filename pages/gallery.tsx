@@ -6,7 +6,7 @@ import { DetailsOnly, Timeline, TimelineContainer } from "@/layouts";
 function Gallery() {
 	return (
 		<main className="main">
-			<Head title="THURMAN: Gallery" desc="The gallery page of the NMMUN" />
+			<Head title="THURMAN: Gallery" desc="The gallery of all the work done here at Thurman" />
 
 			{/* HERO */}
 			{/* <Hero

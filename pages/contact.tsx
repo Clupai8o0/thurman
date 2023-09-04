@@ -12,7 +12,10 @@ function Contact() {
 
 	return (
 		<main className="main">
-			<Head title="THURMAN: Contact Us" desc="" />
+			<Head
+				title="THURMAN: Contact Us"
+				desc="Want to learn more about our creative services? Send us a message and we'll follow as soon as we can"
+			/>
 
 			{/* HERO */}
 			<ContactSection />
