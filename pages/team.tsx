@@ -16,7 +16,7 @@ function Team() {
 		<main className="main">
 			<Head
 				title="THURMAN: Team"
-				desc="The team responsible for making all this possible at Thurman"
+				desc="At Thurman Events, our success is driven by the talent, passion, and dedication of our exceptional team members. We take great pride in introducing you to the individuals who make our organization thrive."
 			/>
 
 			{/* HERO */}

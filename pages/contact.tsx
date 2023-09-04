@@ -14,7 +14,7 @@ function Contact() {
 		<main className="main">
 			<Head
 				title="THURMAN: Contact Us"
-				desc="Want to learn more about our creative services? Send us a message and we'll follow as soon as we can"
+				desc="At Thurman Events, we value your feedback, inquiries, and connections. Our mission is to provide you with the best service possible, and we're here to assist you in any way we can. Whether you have questions about our services, want to discuss a project, or simply want to say hello, reaching out to us is easy and convenient."
 			/>
 
 			{/* HERO */}
