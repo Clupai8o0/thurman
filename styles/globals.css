@@ -305,7 +305,7 @@ button.stt:hover svg {
 .line-wobble {
 	--uib-size: 80px;
 	--uib-speed: 1.55s;
-	--uib-color: #26f705;
+	--uib-color: #D6B71E;
 	--uib-line-weight: 5px;
 	position: relative;
 	display: flex;

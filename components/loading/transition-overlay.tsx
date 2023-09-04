@@ -35,14 +35,15 @@ const TransitionOverlay = () => {
 					duration: 0.8,
 				}}
 			>
-				<h1 className="text-white text-6xl">
+				{/* <h1 className="text-white text-6xl">
 					T<span className="text-primary">H</span>UR
 					<span className="text-primary">M</span>AN
 				</h1>
 				<span className="text-white opacity-75 text-xl">
 					Events <span className="text-primary">M</span>anage
 					<span className="text-primary">m</span>ent
-				</span>
+				</span> */}
+				<img src="/complete-logo.png" alt="complete thurman gold logo with t and statement" className="w-48 h-48" />
 			</motion.div>
 			<div className="line-wobble"></div>
 		</motion.div>

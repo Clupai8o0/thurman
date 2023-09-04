@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<AnimatePresence mode="wait">
 			<TransitionOverlay />
 			<NextTopLoader
-				color="#26F705"
+				color="#D6B71E"
 				initialPosition={0.08}
 				crawlSpeed={200}
 				height={3}
@@ -52,7 +52,6 @@ export default function App({ Component, pageProps }: AppProps) {
 				showSpinner={false}
 				easing="ease"
 				speed={200}
-				shadow="20px 20px 60px #20d204, -20px -20px 60px #2cff06"
 			/>
 
 			<div
