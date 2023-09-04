@@ -26,7 +26,9 @@ export default function Home() {
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						<span className="text-primary">M</span>AN{" "}
+						<span className="text-primary">E</span>V
+						<span className="text-primary">E</span>NTS
 					</>
 				}
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"

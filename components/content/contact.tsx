@@ -198,7 +198,7 @@ const ContactSection = () => {
 							<ul className="text-xl">
 								<li className="gap-2 flex items-center mt-2">
 									<AiFillPhone className="w-6 h-6" />
-									+973 3313 1730
+									+973 3349 9054
 								</li>
 								<li className="gap-2 flex items-center mt-2">
 									<AiFillMail className="w-6 h-6" />
