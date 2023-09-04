@@ -98,7 +98,7 @@ export default function Home() {
 				whiteText
 			>
 				<Heading className="text-6xl md:leading-[80px]">
-					Difficult Roads Beautiful Destinations
+					Difficult Roads But Beautiful Destinations
 				</Heading>
 				<Details>
 					We believe in hard work and bringing together ingenious thinking with

@@ -36,7 +36,7 @@ function Team() {
 			<ProfilesContainer title="Organizers">
 				{[
 					{
-						name: "Reeves Thurman",
+						name: "R. Thurman",
 						position: "CEO",
 						contact: "",
 						src: "/thurman.png",
