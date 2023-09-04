@@ -16,7 +16,7 @@ export default function Home() {
 		<main className="main">
 			<Head
 				title="THURMAN"
-				desc="Thurman Events Management integrates strategic, creative, and technical expertise to guide corporate, government, and non-profit organizations through the implementation of successful exhibits. "
+				desc="Thurman Events Management integrates strategic, creative, and technical expertise to guide corporate, government, and non-profit organizations through the implementation of successful exhibits."
 			/>
 
 			{/* HERO */}
@@ -53,7 +53,7 @@ export default function Home() {
 						<Details reverse className="!text-3xl">
 							"There is no good in a thing until it is done."
 						</Details>
-						<Details className="text-right">- CEO R. Thurman</Details>
+						<Details className="text-right">- R. Thurman CEO</Details>
 					</div>
 				</div>
 			</ImageWithDetails>
