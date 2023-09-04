@@ -40,7 +40,7 @@ const Masonry = ({
 								<img
 									className="h-auto w-full rounded-lg object-cover object-center"
 									src={`/gallery/(${i + 1}).jpeg`}
-									alt="gallery"
+									alt="gallery picture"
 								/>
 							</motion.div>
 						))}
@@ -59,7 +59,7 @@ const Masonry = ({
 							viewport={{ once: true }}
 							className="h-auto w-full rounded-lg"
 							src={`/gallery/(${i}).jpeg`}
-							alt="gallery"
+							alt="gallery picture"
 							key={generateKey()}
 						/>
 					))}
@@ -75,7 +75,7 @@ const Masonry = ({
 							viewport={{ once: true }}
 							className="h-auto w-full rounded-lg"
 							src={`/gallery/(${i}).jpeg`}
-							alt="gallery"
+							alt="gallery picture"
 							key={generateKey()}
 						/>
 					))}
@@ -91,7 +91,7 @@ const Masonry = ({
 							viewport={{ once: true }}
 							className="h-auto w-full rounded-lg"
 							src={`/gallery/(${i}).jpeg`}
-							alt="gallery"
+							alt="gallery picture"
 							key={generateKey()}
 						/>
 					))}

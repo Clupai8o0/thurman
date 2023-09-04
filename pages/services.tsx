@@ -38,7 +38,7 @@ function Services() {
 			{/* HERO */}
 			<Hero
 				src="/hero-services.jpeg"
-				alt="NMMUN preview images of NMMUN'22"
+				alt="picture of 2 people discussing one with pencil in hand on a table with papers"
 				title={
 					<>
 						O<span className="text-primary">U</span>R S
@@ -174,7 +174,7 @@ function Services() {
 								<img
 									className="h-auto w-full rounded-lg object-cover object-center"
 									src={`/gallery/(${i + 1}).jpeg`}
-									alt="gallery"
+									alt="gallery picture"
 								/>
 							</motion.div>
 						))}

@@ -28,7 +28,7 @@ function Team() {
 					</>
 				}
 				src="/hero-team-3.jpg"
-				alt="some dummy pic"
+				alt="picture of a group of people on computers working"
 				// desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
 			/>
 

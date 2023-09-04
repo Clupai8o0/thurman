@@ -22,7 +22,7 @@ export default function Home() {
 			{/* HERO */}
 			<Hero
 				src="/hero-home-1.jpg"
-				alt="NMMUN preview images of NMMUN'22"
+				alt="Picture of a large crowd in an event"
 				title={
 					<>
 						T<span className="text-primary">H</span>UR
@@ -42,7 +42,7 @@ export default function Home() {
 				whiteText
 				reverse
 				src="/thurman.png"
-				alt="dummy "
+				alt="picture of the ceo reeve's thurman"
 				className="pt-16"
 			>
 				<div className="flex flex-row gap-8">
