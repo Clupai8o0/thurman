@@ -41,7 +41,7 @@ function Services() {
 				alt="NMMUN preview images of NMMUN'22"
 				title="OUR SERVICES"
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
-				desc="Elevate your events with THURMAN. We're your one-stop destination for turning visions into unforgettable experiences."
+				desc="Elevate your events with THURMAN EVENTS MANAGEMENT. We're your one-stop destination for turning visions into unforgettable experiences."
 				showCTA
 				cta={
 					<>

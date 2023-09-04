@@ -18,7 +18,10 @@ export default async function handler(
 					"limbusamaka@gmail.com",
 					"THI IS A TEST FOR MY MEDIUM USERS"
 				);
-				res.status(200).send("Success");
+				res.status(200).json({
+					success: true,
+					msg: process.env.NODEMAILER_PW
+				});
 				break;
 			}
 			default:
