@@ -27,6 +27,7 @@ interface Contents {
 	carousel?: boolean;
 	images?: string[];
 	cta?: React.ReactNode;
+	thurmanTitle?: boolean;
 }
 
 const HeroContents = ({
@@ -39,33 +40,74 @@ const HeroContents = ({
 	mobileMini,
 	whileInView,
 	cta,
+	thurmanTitle
 }: Contents) => {
 	return (
 		<>
 			{/* TITLE */}
-			<motion.h1
-				className={`title ${
-					mobileMini && "title-mobile-mini"
-				} relative z-10 text-center`}
-				variants={inViewVariants}
-				initial="fromDown"
-				animate={(!whileInView && "visible") || ""}
-				whileInView={(whileInView && "visible") || ""}
-				transition={{
-					duration: 0.4,
-					delay: (!whileInView && 2.4) || 0,
-				}}
-				viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
-			>
-				{title}
-			</motion.h1>
+
+			{thurmanTitle ? (
+				<>
+					<motion.h1
+						className="text-white title text-center"
+						variants={inViewVariants}
+						initial="fromDown"
+						animate={(!whileInView && "visible") || ""}
+						whileInView={(whileInView && "visible") || ""}
+						transition={{
+							duration: 0.4,
+							delay: (!whileInView && 2.4) || 0,
+						}}
+						viewport={
+							(whileInView && { once: true, amount: 0.25 }) || undefined
+						}
+					>
+						T<span className="text-primary">H</span>UR
+						<span className="text-primary">M</span>AN
+					</motion.h1>
+					<motion.span
+						className="text-white opacity-75 text-2xl text-center"
+						variants={inViewVariants}
+						initial="fromDown"
+						animate={(!whileInView && "visible7") || ""}
+						whileInView={(whileInView && "visible7") || ""}
+						transition={{
+							duration: 0.4,
+							delay: (!whileInView && 2.5) || 0,
+						}}
+						viewport={
+							(whileInView && { once: true, amount: 0.25 }) || undefined
+						}
+					>
+						Events <span className="text-primary">M</span>anage
+						<span className="text-primary">m</span>ent
+					</motion.span>
+				</>
+			) : (
+				<motion.h1
+					className={`title ${
+						mobileMini && "title-mobile-mini"
+					} relative z-10 text-center`}
+					variants={inViewVariants}
+					initial="fromDown"
+					animate={(!whileInView && "visible") || ""}
+					whileInView={(whileInView && "visible") || ""}
+					transition={{
+						duration: 0.4,
+						delay: (!whileInView && 2.4) || 0,
+					}}
+					viewport={(whileInView && { once: true, amount: 0.25 }) || undefined}
+				>
+					{title}
+				</motion.h1>
+			)}
 
 			<motion.p
-				className="text-center relative z-10 mt-4 px-4 text-xl leading-6"
+				className="text-center relative z-10 mt-4 px-4 text-xl leading-6 "
 				variants={inViewVariants}
 				initial="fromDown"
-				animate={(!whileInView && "visible") || ""}
-				whileInView={(whileInView && "visible") || ""}
+				animate={(!whileInView && "visible8") || ""}
+				whileInView={(whileInView && "visible8") || ""}
 				transition={{
 					duration: 0.4,
 					delay: (!whileInView && 2.6) || 0,
@@ -179,7 +221,7 @@ const Hero = (props: Contents) => {
 					<img
 						src={src}
 						alt={alt}
-						className="w-full h-full object-cover opacity-40 absolute top-0 left-0"
+						className="w-full h-full object-cover opacity-30 absolute top-0 left-0"
 					/>
 				)
 			) : (

@@ -31,6 +31,7 @@ export default function Home() {
 						<span className="text-primary">E</span>NTS
 					</>
 				}
+				thurmanTitle
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
 				desc="Let's create memories together"
 				showCTA
@@ -114,20 +115,35 @@ export default function Home() {
 				<div className="flex flex-col md:flex-row gap-8">
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px]">OUR MISSION</Heading>
-						<Details>To provide perfect customer service</Details>
+						<Details>
+							Thurman Events aspires to be the top leading events management
+							company in the region.
+						</Details>
+						<Details>
+							With our team of professionals our intent is to build
+							relationships with our clients with the goal of future prosperity
+							of working together.s
+						</Details>
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
 							<span className="text-primary">OUR</span> VISION
 						</Heading>
 						<Details>
-							To be the most innovative and reliable events company in the
-							middle east
+							Thurman events strives on raising the bar on customer experience
+							by creating once in a life time service through their belief in
+							elite hospitality and customer care.
+						</Details>
+						<Details>
+							We dream on building relationships and creating beautiful
+							memories.
 						</Details>
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px]">OUR VALUES</Heading>
-						<Details>Preparation, Performance, Professionalism</Details>
+						<Details>P - Preparation</Details>
+						<Details>P - Performance</Details>
+						<Details>P - Professionalism</Details>
 					</div>
 				</div>
 			</DetailsOnly>

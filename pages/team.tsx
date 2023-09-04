@@ -21,10 +21,15 @@ function Team() {
 
 			{/* HERO */}
 			<Hero
-				title="OUR TEAM"
+				title={
+					<>
+						O<span className="text-primary">U</span>R TEA
+						<span className="text-primary">M</span>
+					</>
+				}
 				src="/hero-team-3.jpg"
 				alt="some dummy pic"
-				desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
+				// desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
 			/>
 
 			{/* CONTENT */}
