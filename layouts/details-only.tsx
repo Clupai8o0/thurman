@@ -8,6 +8,7 @@ function DetailsOnly({
 	bgImgAlt,
 	bgOpacity,
 	flexRow,
+	id
 }: {
 	children: React.ReactNode;
 	whiteText?: boolean;
@@ -16,12 +17,14 @@ function DetailsOnly({
 	bgImgAlt?: string;
 	bgOpacity?: string;
 	flexRow?: boolean;
+	id?: string;
 }) {
 	return (
 		<div
 			className={`${
 				whiteText ? "text-white" : "text-black"
 			} relative p-h w-full flex justify-center py-28 ${className}`}
+			id={id}
 		>
 			{bgImg ? (
 				<img

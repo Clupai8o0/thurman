@@ -53,15 +53,21 @@ export default function Home() {
 						<Details reverse className="!text-3xl">
 							"There is no good in a thing until it is done."
 						</Details>
-						<Details className="text-right">- R. Thurman CEO</Details>
+						<div className="w-full flex justify-end">
+							<Details className="">
+								- R. Thurman
+								<br />
+								<span className="ml-3">CEO</span>
+							</Details>
+						</div>
 					</div>
 				</div>
 			</ImageWithDetails>
 
-			<DetailsOnly whiteText>
-				<div className="flex flex-col md:flex-row">
+			<DetailsOnly whiteText id="about-us">
+				<div className="flex flex-col md:flex-row mt-8">
 					<div className="md:w-1/2 pr-6">
-						<Heading id="about-us">About Us</Heading>
+						<Heading>About Us</Heading>
 						<Details>
 							Pushing past the hardest of challenges, Thruman Events Management
 							was founded in the year 2021

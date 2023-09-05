@@ -16,11 +16,17 @@ const FloatingNav = ({
 	openSidebar: boolean;
 }) => {
 	const [showFloatingNav, setShowFloatingNav] = useState(false);
+	const [prevScrollPos, setPrevScrollPos] = useState(0);
 
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
-			if (window.scrollY > 400) setShowFloatingNav(true);
+			const currentScrollPos = window.scrollY;
+
+			if (window.scrollY > 400)
+				setShowFloatingNav(true);
 			else setShowFloatingNav(false);
+
+			setPrevScrollPos(currentScrollPos);
 		});
 	}, []);
 

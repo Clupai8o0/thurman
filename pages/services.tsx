@@ -63,9 +63,10 @@ function Services() {
 				reverse
 				src="/expertise.jpeg"
 				alt=""
-				className="py-16"
+				className="py-16 pt-28"
+				id="our-expertise"
 			>
-				<Heading id="our-expertise">Our Expertise</Heading>
+				<Heading>Our Expertise</Heading>
 				<Details>
 					The success of an event lies in the smallest of details. We create an
 					unforgettable experience driven by{" "}

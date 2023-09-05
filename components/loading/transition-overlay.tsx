@@ -43,7 +43,7 @@ const TransitionOverlay = () => {
 					Events <span className="text-primary">M</span>anage
 					<span className="text-primary">m</span>ent
 				</span> */}
-				<img src="/complete-logo.png" alt="complete thurman gold logo with t and statement" className="w-48 h-48" />
+				<img src="/complete-logo.png" alt="complete thurman gold logo with t and statement" className="w-40 h-40" />
 			</motion.div>
 			<div className="line-wobble"></div>
 		</motion.div>
