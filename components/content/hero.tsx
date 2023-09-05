@@ -49,7 +49,7 @@ const HeroContents = ({
 			{thurmanTitle ? (
 				<>
 					<motion.h1
-						className="text-white title text-center"
+						className="text-white title text-center mb-0"
 						variants={inViewVariants}
 						initial="fromDown"
 						animate={(!whileInView && "visible") || ""}
@@ -66,7 +66,7 @@ const HeroContents = ({
 						<span className="text-primary">M</span>AN
 					</motion.h1>
 					<motion.span
-						className="text-white opacity-75 text-2xl text-center"
+						className="text-white opacity-75 text-[64px] text-center tracking-wide font-light leading-[50px] mb-4"
 						variants={inViewVariants}
 						initial="fromDown"
 						animate={(!whileInView && "visible7") || ""}

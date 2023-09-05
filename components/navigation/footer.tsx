@@ -12,7 +12,8 @@ function Footer({ className }: { className?: string }) {
 		>
 			<div className="w-full max-w-screen-xl mx-auto">
 				<div className="sm:flex sm:items-center sm:justify-between">
-					<Link
+					<div />
+					{/* <Link
 						href="/"
 						className="flex items-center mb-4 sm:mb-0"
 						aria-label="Thurman logo"
@@ -23,7 +24,7 @@ function Footer({ className }: { className?: string }) {
 								<span className="text-primary">M</span>AN
 							</>
 						</span>
-					</Link>
+					</Link> */}
 
 					<ul className="flex flex-col md:flex-row gap-4 lg:gap-8 items-start md:items-center my-8 md:m-0">
 						{navLinks.map((link) => (

@@ -44,7 +44,7 @@ const Head = ({ title, desc }: { title: string; desc: string }) => {
 			<title>{title}</title>
 
 			<link
-				href="https://fonts.googleapis.com/css?family=Darker+Grotesque:regular,500,600,700,800&display=swap"
+				href="https://fonts.googleapis.com/css?family=Darker+Grotesque:300,regular,500,600,700,800&display=swap"
 				rel="stylesheet"
 			/>
 

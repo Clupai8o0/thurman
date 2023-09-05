@@ -120,7 +120,9 @@ export default function Home() {
 			<DetailsOnly className="bg-color-12" whiteText>
 				<div className="flex flex-col md:flex-row gap-8">
 					<div className="md:w-1/3">
-						<Heading className="md:leading-[80px]">OUR MISSION</Heading>
+						<Heading className="md:leading-[80px]">
+							OUR <span className="text-white">MISSION</span>{" "}
+						</Heading>
 						<Details>
 							Thurman Events aspires to be the top leading events management
 							company in the region.
@@ -133,7 +135,7 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
-							<span className="text-primary">OUR</span> VISION
+							<span className="text-bg select-none">OUR</span> VISION
 						</Heading>
 						<Details>
 							Thurman events strives on raising the bar on customer experience
@@ -146,7 +148,9 @@ export default function Home() {
 						</Details>
 					</div>
 					<div className="md:w-1/3">
-						<Heading className="md:leading-[80px]">OUR VALUES</Heading>
+						<Heading className="md:leading-[80px] text-white">
+							<span className="text-bg select-none">OUR</span> VALUES
+						</Heading>
 						<Details>P - Preparation</Details>
 						<Details>P - Performance</Details>
 						<Details>P - Professionalism</Details>
