@@ -135,7 +135,7 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
-							<span className="text-bg select-none">OUR</span> VISION
+							<span className="hidden md:block text-bg select-none">OUR</span> VISION
 						</Heading>
 						<Details>
 							Thurman events strives on raising the bar on customer experience
@@ -149,7 +149,7 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
-							<span className="text-bg select-none">OUR</span> VALUES
+							<span className="hidden md:block text-bg select-none">OUR</span> VALUES
 						</Heading>
 						<Details>P - Preparation</Details>
 						<Details>P - Performance</Details>
