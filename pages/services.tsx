@@ -47,7 +47,7 @@ function Services() {
 					</>
 				}
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
-				desc="Elevate your events with THURMAN EVENTS MANAGEMENT. We are your one-stop destination for turning visions into unforgettable experiences."
+				desc="Elevate your events with THURMAN Events Management. We are your one-stop destination for turning visions into unforgettable experiences."
 				showCTA
 				cta={
 					<>
@@ -75,7 +75,15 @@ function Services() {
 					memories
 				</Details>
 
-				<div>
+				<motion.div
+					variants={inViewVariants}
+					initial="fromLeft"
+					whileInView="visible"
+					transition={{
+						duration: 0.4,
+					}}
+					viewport={{ once: true, amount: 0.25 }}
+				>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
 							<ul className="flex flex-col gap-y-2">
@@ -110,7 +118,7 @@ function Services() {
 							</ul>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</ImageWithDetails>
 
 			<ImageWithDetails
@@ -129,7 +137,15 @@ function Services() {
 					the occasion
 				</Details>
 
-				<div>
+				<motion.div
+					variants={inViewVariants}
+					initial="fromRight"
+					whileInView="visible"
+					transition={{
+						duration: 0.4,
+					}}
+					viewport={{ once: true, amount: 0.25 }}
+				>
 					<div className="flex flex-row mt-8">
 						<div className="w-1/2 md:w-1/3">
 							<ul className="flex flex-col gap-y-2">
@@ -152,7 +168,7 @@ function Services() {
 							</ul>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</ImageWithDetails>
 
 			<DetailsOnly className="overflow-y-hidden h-[1800px] lg:h-[1440px] !pb-0">
