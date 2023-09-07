@@ -53,7 +53,7 @@ function Team() {
 						name: "Javed K.",
 						position: "Manager",
 						contact: "",
-						src: "/javed.jpeg",
+						src: "/javed.png",
 						alt: "Portrait of Javed K., the Manager of Thurman Event Management",
 					},
 				].map((profile) => (
