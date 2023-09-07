@@ -40,7 +40,7 @@ const HeroContents = ({
 	mobileMini,
 	whileInView,
 	cta,
-	thurmanTitle
+	thurmanTitle,
 }: Contents) => {
 	return (
 		<>
@@ -62,8 +62,7 @@ const HeroContents = ({
 							(whileInView && { once: true, amount: 0.25 }) || undefined
 						}
 					>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN
+						THURMAN
 					</motion.h1>
 					<motion.span
 						className="text-white opacity-75 text-4xl md:text-[64px] text-center tracking-wide font-light leading-[50px] mb-4"
@@ -79,8 +78,7 @@ const HeroContents = ({
 							(whileInView && { once: true, amount: 0.25 }) || undefined
 						}
 					>
-						Events <span className="text-primary">M</span>anage
-						<span className="text-primary">m</span>ent
+						Events Management
 					</motion.span>
 				</>
 			) : (

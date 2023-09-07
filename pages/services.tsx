@@ -39,13 +39,7 @@ function Services() {
 			<Hero
 				src="/hero-services.jpeg"
 				alt="picture of 2 people discussing one with pencil in hand on a table with papers"
-				title={
-					<>
-						O<span className="text-primary">U</span>R S
-						<span className="text-primary">E</span>RVIC
-						<span className="text-primary">E</span>S
-					</>
-				}
+				title={<>OUR SERVICES</>}
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
 				desc="Elevate your events with THURMAN Events Management. We are your one-stop destination for turning visions into unforgettable experiences."
 				showCTA
@@ -203,14 +197,7 @@ function Services() {
 			</DetailsOnly>
 
 			<Hero
-				title={
-					<>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN{" "}
-						<span className="text-primary">E</span>V
-						<span className="text-primary">E</span>NTS
-					</>
-				}
+				title={<>THURMAN EVENTS</>}
 				desc={
 					<>
 						Let us help you in making those moments that matter,{" "}

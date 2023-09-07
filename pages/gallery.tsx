@@ -34,14 +34,7 @@ function Gallery() {
 			</div>
 
 			<Hero
-				title={
-					<>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN{" "}
-						<span className="text-primary">E</span>V
-						<span className="text-primary">E</span>NTS
-					</>
-				}
+				title={<>THURMAN EVENTS</>}
 				desc={
 					<>
 						Let us help you in making those moments that matter,{" "}

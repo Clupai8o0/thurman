@@ -23,14 +23,7 @@ export default function Home() {
 			<Hero
 				src="/hero-home-1.jpg"
 				alt="Picture of a large crowd in an event"
-				title={
-					<>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN{" "}
-						<span className="text-primary">E</span>V
-						<span className="text-primary">E</span>NTS
-					</>
-				}
+				title={<>THURMAN EVENTS</>}
 				thurmanTitle
 				// desc="There's no good in a thing until its done. - CEO R. Thurman"
 				desc="Let's create memories together"
@@ -135,7 +128,8 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
-							<span className="hidden md:block text-bg select-none">OUR</span> VISION
+							<span className="hidden md:block text-bg select-none">OUR</span>{" "}
+							VISION
 						</Heading>
 						<Details>
 							Thurman events strives on raising the bar on customer experience
@@ -149,7 +143,8 @@ export default function Home() {
 					</div>
 					<div className="md:w-1/3">
 						<Heading className="md:leading-[80px] text-white">
-							<span className="hidden md:block text-bg select-none">OUR</span> VALUES
+							<span className="hidden md:block text-bg select-none">OUR</span>{" "}
+							VALUES
 						</Heading>
 						<Details>P - Preparation</Details>
 						<Details>P - Performance</Details>
@@ -158,14 +153,7 @@ export default function Home() {
 			</DetailsOnly>
 
 			<Hero
-				title={
-					<>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN{" "}
-						<span className="text-primary">E</span>V
-						<span className="text-primary">E</span>NTS
-					</>
-				}
+				title={<>THURMAN EVENTS</>}
 				desc={
 					<>
 						Let us help you in making those moments that matter,{" "}

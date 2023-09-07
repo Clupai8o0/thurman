@@ -21,12 +21,7 @@ function Team() {
 
 			{/* HERO */}
 			<Hero
-				title={
-					<>
-						O<span className="text-primary">U</span>R TEA
-						<span className="text-primary">M</span>
-					</>
-				}
+				title={<>OUR TEAM</>}
 				src="/hero-team-3.jpg"
 				alt="picture of a group of people on computers working"
 				// desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quaerat molestias."
@@ -72,14 +67,7 @@ function Team() {
 			<div className="my-12" />
 
 			<Hero
-				title={
-					<>
-						T<span className="text-primary">H</span>UR
-						<span className="text-primary">M</span>AN{" "}
-						<span className="text-primary">E</span>V
-						<span className="text-primary">E</span>NTS
-					</>
-				}
+				title={<>THURMAN EVENTS</>}
 				desc={
 					<>
 						Let us help you in making those moments that matter,{" "}
