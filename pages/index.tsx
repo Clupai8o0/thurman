@@ -153,7 +153,6 @@ export default function Home() {
 						</Heading>
 						<Details>P - Preparation</Details>
 						<Details>P - Performance</Details>
-						<Details>P - Professionalism</Details>
 					</div>
 				</div>
 			</DetailsOnly>
