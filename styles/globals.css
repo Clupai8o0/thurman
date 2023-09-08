@@ -21,7 +21,7 @@
 
 	/* Texts */
 	.title {
-		@apply text-7xl md:text-9xl;
+		@apply text-7xl md:text-9xl !text-primary;
 	}
 	.title-mobile-mini {
 		@apply title text-5xl md:text-8xl;
