@@ -63,7 +63,7 @@ export default function Home() {
 						<Heading>About Us</Heading>
 						<Details>
 							Pushing past the hardest of challenges, Thruman Events Management
-							was founded in the year 2021
+							was found in the year 2021
 						</Details>
 						<Details>
 							As a player in the field of events management, we are proud of
