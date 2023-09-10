@@ -220,3 +220,12 @@ function Services() {
 }
 
 export default Services;
+
+
+import { GetStaticProps } from "next";
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+	return {
+		props: {},
+	};
+};
