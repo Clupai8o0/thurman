@@ -13,7 +13,7 @@ function ProfilesContainer({
 		<div className="w-full flex justify-center p-h py-12 pt-36">
 			<div className="max-w-7xl w-full">
 				{/* <Heading className="mb-10">{title}</Heading> */}
-				<div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-6">
+				<div className="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-4">
 					{children}
 				</div>
 			</div>

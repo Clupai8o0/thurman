@@ -18,7 +18,7 @@ const Profile = ({
 }) => {
 	return (
 		<motion.div
-			className={`max-w-sm bg-[#090909] border border-gray-800 rounded-lg shadow-md ${
+			className={`w-full bg-[#090909] border border-gray-800 rounded-md shadow-md ${
 				rounded && "flex flex-col items-center pt-8"
 			}`}
 			variants={inViewVariants}
@@ -30,7 +30,7 @@ const Profile = ({
 			viewport={{ once: true, amount: 0.25 }}
 		>
 			<img
-				className={`object-cover h-80 w-80 ${
+				className={`object-cover w-3/4 ${
 					!rounded ? "rounded-t-lg" : "rounded-full"
 				}`}
 				src={src}
