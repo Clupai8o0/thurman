@@ -1,29 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-		<!--	created with www.mysitemapgenerator.com	-->
-		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-	<loc>https://www.thurmanevents.com/</loc>
-	<lastmod>2023-09-10T14:52:57+01:00</lastmod>
-	<priority>0.4</priority>
-</url>
-<url>
-	<loc>https://www.thurmanevents.com/team</loc>
-	<lastmod>2023-09-10T14:52:57+01:00</lastmod>
-	<priority>0.2</priority>
-</url>
-<url>
-	<loc>https://www.thurmanevents.com/services</loc>
-	<lastmod>2023-09-10T14:52:57+01:00</lastmod>
-	<priority>0.2</priority>
-</url>
-<url>
-	<loc>https://www.thurmanevents.com/gallery</loc>
-	<lastmod>2023-09-10T14:52:57+01:00</lastmod>
-	<priority>0.2</priority>
-</url>
-<url>
-	<loc>https://www.thurmanevents.com/contact</loc>
-	<lastmod>2023-09-10T14:52:57+01:00</lastmod>
-	<priority>0.2</priority>
-</url>
-</urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://thurmanevents.com/sitemap-0.xml</loc></sitemap>
+</sitemapindex>
