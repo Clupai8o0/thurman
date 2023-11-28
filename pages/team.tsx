@@ -42,7 +42,7 @@ function Team() {
 						// position: "COO (Chief Operating Officer)",
 						position: "COO",
 						contact: "",
-						src: "/shehbaaz.jpeg",
+						src: "/shehbaaz.png",
 						alt: "Picture of Shehbaaz K., the Chief Operating Officer at Thurman Event Management",
 					},
 					{
